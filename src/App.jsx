@@ -12,19 +12,16 @@ function App() {
   return (
     <>
       <div>
-        <img src={domino} className="rounded-lg shadow-2xl..." alt="Vite logo" />
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <img src={domino} className="rounded-lg shadow-2xl ..." alt="Domino" />
       </div>
-      <h1>Hello world</h1>
+      <h1>Hello Domino</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
       </div>
       <p className="font-serif ...">
-        Click on the Vite and React logos to learn more
+        Am I changing?
       </p>
     </>
   );
