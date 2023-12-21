@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Loading from "../Loading";
 import { Octokit } from "octokit";
+import ListProjects from "../components/ListProjects";
 
 const token = import.meta.env.GITHUB_TOKEN;
 const octokit = new Octokit({
   auth: token,
 });
 
-const ListProjects = () => {
+const Projects = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [repos, setRepos] = useState([]);
 
@@ -25,7 +26,6 @@ const ListProjects = () => {
           }
         );
         setRepos(data.data);
-        console.log(data.data);
       } catch (error) {
         console.error(error.message);
       } finally {
@@ -44,14 +44,16 @@ const ListProjects = () => {
       <div>
         <h1>My Projects</h1>
       </div>
-      <div className='h-[calc(100vh-180px)] flex items-center justify-center mx-20'>
-        {repos.map((repo, index) => (
-          <div key={index} className='col'>
-            <li>{repo.name}</li>
-          </div>
-        ))}
+      <div className='h-[calc(100vh-180px)] flex justify-center mx-20'>
+        <div className='flex-wrap'>
+          {repos.map((repo) => (
+            <div className='mb-4'>
+              <ListProjects key={repo.id} repo={repo} />
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );
 };
-export default ListProjects;
+export default Projects;

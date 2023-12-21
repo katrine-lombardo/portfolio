@@ -1,8 +1,8 @@
-function Skills() {
-    return (
-        <>
-        <p>This is the skills page</p>
-        </>
-    )
-}
+const Skills = () => {
+  return (
+    <>
+      <p>This is the skills page</p>
+    </>
+  );
+};
 export default Skills;
