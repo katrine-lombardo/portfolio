@@ -5,6 +5,7 @@ import About from "./views/About";
 import Projects from "./views/Projects";
 import Skills from "./views/Skills";
 import Nav from "./Nav";
+import Footer from "./Footer";
 import "./App.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path='/skills' element={<Skills />} />
         <Route path='/about' element={<About />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

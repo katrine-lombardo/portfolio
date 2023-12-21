@@ -5,7 +5,7 @@ function Nav() {
   return (
     <>
       <div className='mb-8'>
-        <ul className='flex'>
+        <ul className='flex p-6'>
           <li className='mr-6'>
             <NavLink to='/' end>
               <img
