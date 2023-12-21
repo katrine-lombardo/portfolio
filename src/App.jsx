@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./views/HomePage";
 import About from "./views/About";
-import Projects from "./views/Projects";
+import ListProjects from "./views/ListProjects";
 import Skills from "./views/Skills";
 import Nav from "./Nav";
 import "./App.css";
@@ -13,7 +13,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path='/*' element={<HomePage />} />
-        <Route path='/projects' element={<Projects />} />
+        <Route path='/projects' element={<ListProjects />} />
         <Route path='/skills' element={<Skills />} />
         <Route path='/about' element={<About />} />
       </Routes>
