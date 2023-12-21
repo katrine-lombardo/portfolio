@@ -44,8 +44,8 @@ const Projects = () => {
   return (
     <>
       <h1>My Projects</h1>
-      <div className='h-[calc(100vh-180px)] w-full flex'>
-        <div className='flex-wrap justify-start'>
+      <div className='h-[calc(100vh-180px)] w-full justify-center flex'>
+        <div className='flex-wrap rounded-lg border-2 p-6 mt-6 overflow-y-auto'>
           {repos.map((repo) => (
             <div className='mb-4'>
               <ListProjects key={repo.id} repo={repo} />

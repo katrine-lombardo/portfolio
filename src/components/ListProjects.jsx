@@ -28,7 +28,7 @@ const ProjectCard = ({ repo }) => {
   }, [repo]);
 
   return (
-    <div>
+    <div className='container'>
       <ul role='list' className='divide-y divide-gray-100 w-full'>
         <li className='flex justify-between gap-x-6 py-5'>
           <div className='flex min-w-0 gap-x-4'>
