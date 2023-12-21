@@ -14,6 +14,7 @@ function Nav() {
             />
           </NavLink>
         </li>
+        <li className='flex-grow'></li>
         <li className='mr-6'>
           <NavLink
             className={({ isActive }) =>
