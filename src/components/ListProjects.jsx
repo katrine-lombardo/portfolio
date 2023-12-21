@@ -17,7 +17,14 @@ const ProjectCard = ({ repo }) => {
     const diffTime = Math.abs(now - lastUpdated);
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 
-    setDaysSinceLastUpdate(diffDays);
+    let currentDate = new Date();
+    currentDate.setHours(0, 0, 0, 0);
+
+    if (lastUpdated.getTime() === currentDate.getTime()) {
+      setDaysSinceLastUpdate(-1);
+    } else {
+      setDaysSinceLastUpdate(diffDays);
+    }
   }, [repo]);
 
   return (
@@ -42,7 +49,9 @@ const ProjectCard = ({ repo }) => {
           <div className='hidden shrink-0 sm:flex sm:flex-col sm:items-end'>
             <p className='text-sm leading-6 text-gray-900'>{repo.language}</p>
             <p className='mt-1 text-xs leading-5 text-gray-500'>
-              Last updated {daysSinceLastUpdate} days ago
+              {daysSinceLastUpdate === -1
+                ? "Updated today"
+                : `Last updated ${daysSinceLastUpdate} days ago`}
             </p>
           </div>
         </li>
