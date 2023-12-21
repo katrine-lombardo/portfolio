@@ -1,8 +1,8 @@
-function HomePage() {
+const HomePage = () => {
   return (
     <div className='h-[calc(100vh-150px)] flex items-center justify-center mx-20'>
       <div className='grid grid-cols-2 gap-10'>
-        <div class='px-1 w-full'>
+        <div className='px-1 w-full'>
           <img
             src='domino.jpeg'
             className='w-full aspect-square object-cover rounded-full border-2'
@@ -17,8 +17,8 @@ function HomePage() {
           </div>
           <div>
             <p className='text-left my-3'>
-              Welcome to badingo.net, Katrine's portfolio page built in Vite and
-              React, and deployed on GoDaddy.com.
+              Welcome to badingo.net, Katrine's portfolio page built in Vite /
+              React and deployed on GoDaddy.com.
             </p>
           </div>
           <div>
@@ -31,5 +31,5 @@ function HomePage() {
       </div>
     </div>
   );
-}
+};
 export default HomePage;
