@@ -8,7 +8,15 @@ export default {
     './src/components/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'rose': {
+          light: '#ffe4e6',
+          DEFAULT: '#fda4af',
+          dark: '#4c0519',
+        },
+      },
+    },
   },
   plugins: [],
 }

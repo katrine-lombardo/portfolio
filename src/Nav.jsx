@@ -4,35 +4,61 @@ import { NavLink } from "react-router-dom";
 function Nav() {
   return (
     <>
-      <ul className="flex border-b">
-        <li className="-mb-px mr-1">
+      <ul className='flex'>
+        <li className='mr-6'>
+          <NavLink to='/' end>
+            <img
+              src='badingo_clean.png'
+              className='w-12 rounded-lg ...'
+              alt='badingo_clean'
+            />
+          </NavLink>
+        </li>
+        <li className='mr-6'>
           <NavLink
-            className="bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 text-blue-700 font-semibold"
-            to="/"
+            className={({ isActive }) =>
+              isActive
+                ? "text-blue-900 hover:text-blue-800"
+                : "text-blue-500 hover:text-blue-800"
+            }
+            to='/'
+            end
           >
             Home
           </NavLink>
         </li>
-        <li className="mr-1">
+        <li className='mr-6'>
           <NavLink
-            className="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold"
-            to="/projects"
+            className={({ isActive }) =>
+              isActive
+                ? "text-blue-900 hover:text-blue-800"
+                : "text-blue-500 hover:text-blue-800"
+            }
+            to='/projects'
           >
             Projects
           </NavLink>
         </li>
-        <li className="mr-1">
+        <li className='mr-6'>
           <NavLink
-            className="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold"
-            to="/skills"
+            className={({ isActive }) =>
+              isActive
+                ? "text-blue-900 hover:text-blue-800"
+                : "text-blue-500 hover:text-blue-800"
+            }
+            to='/skills'
           >
             Skills
           </NavLink>
         </li>
-        <li className="mr-1">
+        <li className='mr-6'>
           <NavLink
-            className="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold"
-            to="/about"
+            className={({ isActive }) =>
+              isActive
+                ? "text-blue-900 hover:text-blue-800"
+                : "text-blue-500 hover:text-blue-800"
+            }
+            to='/about'
           >
             About
           </NavLink>
