@@ -20,6 +20,8 @@ const Projects = () => {
           "GET /users/katrine-lombardo/repos",
           {
             username: "katrine-lombardo",
+            sort: "updated",
+            direction: "desc",
             headers: {
               "X-GitHub-Api-Version": "2022-11-28",
             },
@@ -41,11 +43,9 @@ const Projects = () => {
 
   return (
     <>
-      <div>
-        <h1>My Projects</h1>
-      </div>
-      <div className='h-[calc(100vh-180px)] flex justify-center mx-20'>
-        <div className='flex-wrap'>
+      <h1>My Projects</h1>
+      <div className='h-[calc(100vh-180px)] w-full flex'>
+        <div className='flex-wrap justify-start'>
           {repos.map((repo) => (
             <div className='mb-4'>
               <ListProjects key={repo.id} repo={repo} />
