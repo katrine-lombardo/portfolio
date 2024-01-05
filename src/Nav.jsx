@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 function Nav() {
   return (
     <>
-      <div className='mb-8 bg-gradient-to-r from-rose-50 to-rose-100'>
+      <div className='w-screen absolute left-0 top-0 bg-gradient-to-r from-rose-50 to-rose-100'>
         <ul className='flex items-center justify-center p-6'>
           <li className='mr-6'>
             <NavLink to='/' end>
