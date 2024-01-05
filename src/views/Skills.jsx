@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <>
       <h1>Skills</h1>
-      <div className='h-[calc(100vh-180px)] w-full justify-center flex'>
+      <div className='justify-center flex'>
         <div>
           <h2>My Skills</h2>
           <ListSkills />
