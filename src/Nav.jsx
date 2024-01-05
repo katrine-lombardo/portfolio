@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 function Nav() {
   return (
     <>
-      <div className='mb-8'>
-        <ul className='flex p-6'>
+      <div className='mb-8 bg-gradient-to-r from-rose-50 to-rose-100'>
+        <ul className='flex items-center justify-center p-6'>
           <li className='mr-6'>
             <NavLink to='/' end>
               <img
@@ -20,8 +20,8 @@ function Nav() {
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? "text-blue-900 hover:text-blue-800"
-                  : "text-blue-500 hover:text-blue-800"
+                  ? "text-rose-900 hover:text-rose-800 underline underline-offset-8"
+                  : "text-rose-500 hover:text-rose-700"
               }
               to='/'
               end
@@ -33,8 +33,8 @@ function Nav() {
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? "text-blue-900 hover:text-blue-800"
-                  : "text-blue-500 hover:text-blue-800"
+                  ? "text-rose-900 hover:text-rose-800 underline underline-offset-8"
+                  : "text-rose-500 hover:text-rose-700"
               }
               to='/projects'
             >
@@ -45,8 +45,8 @@ function Nav() {
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? "text-blue-900 hover:text-blue-800"
-                  : "text-blue-500 hover:text-blue-800"
+                  ? "text-rose-900 hover:text-rose-800 underline underline-offset-8"
+                  : "text-rose-500 hover:text-rose-700"
               }
               to='/skills'
             >
@@ -57,8 +57,8 @@ function Nav() {
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? "text-blue-900 hover:text-blue-800"
-                  : "text-blue-500 hover:text-blue-800"
+                  ? "text-rose-900 hover:text-rose-800 underline underline-offset-8"
+                  : "text-rose-500 hover:text-rose-700"
               }
               to='/about'
             >
