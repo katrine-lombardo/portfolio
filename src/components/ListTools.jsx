@@ -3,7 +3,7 @@ import "../assets/Logos.css";
 const ListTools = () => {
   return (
     <div>
-      <div class='flex flex-wrap'>
+      <div class='flex overflow-x-auto space-x-7'>
         <section class='flex-shrink-1'>
           <div class='icons8-docker'></div>
           <span>Docker</span>
