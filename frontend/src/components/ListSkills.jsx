@@ -1,43 +1,43 @@
-import "../assets/Logos.css";
+import "../styles/Logos.css";
 
 const ListSkills = () => {
   return (
     <div>
-      <div class='flex overflow-x-auto space-x-7'>
-        <section class='flex-shrink-1'>
-          <div class='icons8-javascript'></div>
+      <div className='flex overflow-x-auto space-x-7'>
+        <section className='flex-shrink-1'>
+          <div className='icons8-javascript'></div>
           <span>JavaScript</span>
         </section>
-        <section class='flex-shrink-1'>
-          <div class='icons8-python'></div>
+        <section className='flex-shrink-1'>
+          <div className='icons8-python'></div>
           <span>Python</span>
         </section>
-        <section class='flex-shrink-1'>
-          <div class='icons8-html'></div>
+        <section className='flex-shrink-1'>
+          <div className='icons8-html'></div>
           <span>HTML</span>
         </section>
-        <section class='flex-shrink-1'>
-          <div class='icons8-css'></div>
+        <section className='flex-shrink-1'>
+          <div className='icons8-css'></div>
           <span>CSS</span>
         </section>
-        <section class='flex-shrink-1'>
-          <div class='icons8-sql'></div>
+        <section className='flex-shrink-1'>
+          <div className='icons8-sql'></div>
           <span>PostgreSQL</span>
         </section>
-        <section class='flex-shrink-1'>
-          <div class='icons8-react'></div>
+        <section className='flex-shrink-1'>
+          <div className='icons8-react'></div>
           <span>React</span>
         </section>
-        <section class='flex-shrink-1'>
-          <div class='icons8-vite'></div>
+        <section className='flex-shrink-1'>
+          <div className='icons8-vite'></div>
           <span>Vite</span>
         </section>
-        <section class='flex-shrink-1'>
-          <div class='icons8-django'></div>
+        <section className='flex-shrink-1'>
+          <div className='icons8-django'></div>
           <span>Django</span>
         </section>
-        <section class='flex-shrink-1'>
-          <div class='icons8-fastapi'></div>
+        <section className='flex-shrink-1'>
+          <div className='icons8-fastapi'></div>
           <span>FastAPI</span>
         </section>
       </div>
