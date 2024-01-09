@@ -18,8 +18,8 @@ const HomePage = () => {
             </div>
             <div>
               <p className='text-left my-3'>
-                Welcome to badingo.net, Katrine's portfolio page built in Vite +
-                React and deployed on GoDaddy.
+                Testing testing 123 Welcome to badingo.net, Katrine's portfolio
+                page built in Vite + React and deployed on GoDaddy.
               </p>
             </div>
             <div>
