@@ -4,7 +4,9 @@ const About = () => {
   return (
     <div className='columns-1 p-8'>
       <h1>About Me</h1>
-      <ContactForm />
+      <div className='flex justify-center'>
+        <ContactForm />
+      </div>
     </div>
   );
 };
