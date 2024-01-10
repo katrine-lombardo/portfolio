@@ -1,7 +1,7 @@
 const ContactForm = () => {
   return (
     <div className='flex flex-col w-3/5 justify-start p-10 m-10 shadow-md rounded-xl'>
-      <h1>Contact Form</h1>
+      <h1>Let's chat</h1>
       <label className='block text-left mb-5'>
         <span className='text-gray-700'>Name</span>
         <input
