@@ -1,32 +1,39 @@
 const AboutMe = () => {
   return (
-    <div className='grid grid-rows-2 gird-cols-2 gap-4 border-2 w-4/5'>
-      <div className='col-span-2'>
-        <h1>About Me</h1>
-      </div>
-      <div className='row-span-2'>
-        <p>
-          Hello again, world! In 2023 I made the decision to level-up my career
-          by attending Hack Reactor's Advanced Full Time Immersive Coding
-          Bootcamp, re-entering the workforce as a Software Developer. I have a
-          decade of experience working in tech startups in a Human Resources
-          capacity, where I supported high-growth teams with strategic
-          partnership across multiple HR operational areas. Now I bring the
-          magic of coding to my skillset. With a demonstrated affinity for
-          learning new things, implementing new tools and developing scaleable
-          systems, my next adventure will see me using my newly developed(haha)
-          technical skills with JavaScript, Python, React, and more to
-          contribute more deeply to rapidly developing tech startups. Excited to
-          connect, collaborate, and contribute to the ever-evolving landscape of
-          technology! 🚀 #SoftwareDeveloper #TechEnthusiast #CodingMagic
-        </p>
-      </div>
-      <div className='row-span-3'>
-        <img
-          src='katrine.png'
-          className='w-fit aspect-square object-cover rounded-full border-2 object-none object-top'
-          alt='Katrine'
-        />
+    <div>
+      <h1 className='mb-4'>About Me</h1>
+      <div className='flex flex-wrap gap-4 justify-center lg:flex-no-wrap'>
+        <div className='basis-3/5'>
+          <p className='my-2'>Hi, I'm Katrine!</p>
+          <p>
+            I'm a recent Hack Reactor coding bootcamp graduate and seasoned
+            workplace leader with a passion for problem-solving.
+          </p>
+          <p className='my-2'>
+            I aim to use cutting-edge technology for innovative problem-solving
+            and actively promote diversity in the tech industry. With a strong
+            work ethic and a multicultural background (born in Scotland,
+            Norwegian as my first language), I see myself as a bridge-builder
+            connecting ideas, people, and solutions.
+          </p>
+          <p className='my-2'>
+            In my 10-year HR journey at tech startups, I've demonstrated
+            determination, loyalty, and humor, refining skills in data and
+            systems. I've been told I bring a "special sauce" of resilience,
+            continuous growth, humour, and authenticity.
+          </p>
+          <p className='my-2'>
+            Excited to connect, collaborate, and contribute to the ever-evolving
+            landscape of technology! 🚀
+          </p>
+        </div>
+        <div className='flex-none md:shrink-0'>
+          <img
+            src='katrine.png'
+            className='w-fit aspect-square object-cover rounded-full border-2 object-none object-top'
+            alt='Katrine'
+          />
+        </div>
       </div>
     </div>
   );
