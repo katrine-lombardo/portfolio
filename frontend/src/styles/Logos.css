@@ -38,7 +38,7 @@
   display: inline-block;
   width: 64px;
   height: 64px;
-  background: url("/public/logos/icons8-sql-64.png") 50% 50% no-repeat;
+  background: url("/logos/icons8-sql-64.png") 50% 50% no-repeat;
   background-size: 100%;
 }
 
@@ -46,7 +46,7 @@
   display: inline-block;
   width: 64px;
   height: 64px;
-  background: url("/public/logos/icons8-react-native-64.png") 50% 50% no-repeat;
+  background: url("/logos/icons8-react-native-64.png") 50% 50% no-repeat;
   background-size: 100%;
 }
 
@@ -54,7 +54,7 @@
   display: inline-block;
   width: 64px;
   height: 64px;
-  background: url("/public/logos/icons8-vite-96.png") 50% 50% no-repeat;
+  background: url("/logos/icons8-vite-96.png") 50% 50% no-repeat;
   background-size: 100%;
 }
 
@@ -62,7 +62,7 @@
   display: inline-block;
   width: 64px;
   height: 64px;
-  background: url("/public/logos/icons8-django-64.png") 50% 50% no-repeat;
+  background: url("/icons8-django-64.png") 50% 50% no-repeat;
   background-size: 100%;
 }
 
@@ -70,7 +70,7 @@
   display: inline-block;
   width: 64px;
   height: 64px;
-  background: url("/public/logos/icons8-lightning-64.png") 50% 50% no-repeat;
+  background: url("/logos/icons8-lightning-64.png") 50% 50% no-repeat;
   background-size: 100%;
 }
 
@@ -92,7 +92,7 @@
   display: inline-block;
   width: 64px;
   height: 64px;
-  background: url("/public/logos/icons8-rest-api-64.png") 50% 50% no-repeat;
+  background: url("/logos/icons8-rest-api-64.png") 50% 50% no-repeat;
   background-size: 100%;
 }
 
@@ -116,10 +116,9 @@
   display: inline-block;
   width: 64px;
   height: 64px;
-  background: url("/public/logos/icons8-cursor-64.png") 50% 50% no-repeat;
+  background: url("/icons8-cursor-64.png") 50% 50% no-repeat;
   background-size: 100%;
 }
-
 
 .icons8-docker {
   display: inline-block;
