@@ -1,6 +1,6 @@
 const HomePage = () => {
   return (
-    <div className='mt-32'>
+    <div className='my-32'>
       <div className='flex flex-wrap gap-4 justify-center items-center lg:flex-no-wrap'>
         <div className='flex-none md:shrink-0'>
           <img
