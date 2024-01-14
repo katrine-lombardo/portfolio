@@ -34,13 +34,18 @@ const ProjectCard = ({ repo }) => {
           <div className='flex min-w-0 gap-x-4'>
             <img
               className='h-12 w-12 flex-none rounded-full bg-gray-50'
-              src='github_logo.webp'
+              src='logos/github_logo.webp'
               alt=''
             />
             <div className='min-w-0 flex-auto'>
-              <p className='text-sm font-semibold leading-6 text-gray-900 text-left'>
-                {repo.name}
-              </p>
+              <Link
+                to={repo.html_url}
+                className='text-sm font-semibold leading-6 text-gray-900 text-left'
+              >
+                <p className='text-sm font-semibold leading-6 text-gray-900 text-left'>
+                  {repo.name}
+                </p>
+              </Link>
               <p className='mt-1 truncate text-xs leading-5 text-gray-500 text-wrap text-left'>
                 {repo.description}
               </p>
