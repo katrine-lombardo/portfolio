@@ -58,7 +58,7 @@ const ListCertifications = () => {
             to={"https://www.sps.nyu.edu/professional-pathways.html"}
             className='text-sm text-gray-500'
           >
-            NYU School of Professional Studies
+            New York University
           </Link>
         </h3>
         <p className='text-gray-700 text-xs text-justify mt-2'>
