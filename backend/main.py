@@ -1,14 +1,15 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from routes import comments
 import os
 
 app = FastAPI()
 
+app.include_router(comments.router, tags=["Comments"])
+
 CORS_HOST = os.environ.get("CORS_HOST")
 if not CORS_HOST:
-    origins = [
-        "http://localhost:5173"
-    ]
+    origins = ["http://localhost:5173"]
 else:
     origins = [CORS_HOST]
 
@@ -23,4 +24,4 @@ app.add_middleware(
 
 @app.get("/")
 def read_root():
-    return {"message": "Hello from FastAPI"}
+    return {"message": "ROOT PATH PORTFOLIO"}
