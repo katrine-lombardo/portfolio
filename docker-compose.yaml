@@ -28,7 +28,7 @@ services:
         environment:
             # WAIT_HOSTS: postgres:5432
             CORS_HOST: http://localhost:5173
-            # DATABASE_URL: mysqlnd://user:cpses_fuuul8r6iz@localhost/portfolio
+            # DATABASE_URL:
         build:
             context: backend
             dockerfile: Dockerfile.dev

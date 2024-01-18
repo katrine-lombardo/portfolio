@@ -89,7 +89,7 @@ const ContactForm = () => {
         </label>
         <button
           type='submit'
-          className='mt-6 text-white bg-rose-500 hover:bg-rose-400 focus:outline-none focus:ring focus:ring-rose-200'
+          className='mt-6 text-white bg-rose-800 hover:bg-rose-600 p-2 shadow-md rounded-xl focus:outline-none focus:ring focus:ring-rose-200'
         >
           Share
         </button>
