@@ -56,7 +56,7 @@ const ContactForm = () => {
             type='text'
             value={formData.name}
             onChange={handleFormChange}
-            className='mt-1 w-full block rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0'
+            className='mt-1 w-full block rounded-md p-2 bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0'
             required
             placeholder=''
           ></input>
@@ -69,7 +69,7 @@ const ContactForm = () => {
             value={formData.email}
             onChange={handleFormChange}
             type='email'
-            className='mt-1 w-full block rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0'
+            className='mt-1 w-full block rounded-md p-2 bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0'
             required
             placeholder='domino@badingo.net'
           ></input>
@@ -82,7 +82,7 @@ const ContactForm = () => {
             name='comments'
             value={formData.comments}
             onChange={handleFormChange}
-            className='mt-1 w-full block rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0'
+            className='mt-1 w-full block rounded-md p-2 bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0'
             required
             rows='3'
           ></textarea>
