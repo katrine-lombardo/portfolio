@@ -20,3 +20,16 @@ async def create_comment(
         return comments.submit_comment(comment)
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"An error occurred: {str(e)}")
+
+
+@router.get(
+    "/backend/comments",
+    response_model=Union[CommentOut, Error],
+)
+async def get_all_comments(
+    comments: CommentQueries = Depends(),
+):
+    try:
+        return comments.get_all_comments(comments)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"An error occurred: {str(e)}")
