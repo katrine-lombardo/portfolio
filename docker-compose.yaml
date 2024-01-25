@@ -1,16 +1,24 @@
+volumes:
+    mariadb:
+    phpmyadmin:
 services:
-    db:
-        image: mariadb
+    mariadb:
+        image: mariadb:latest
+        restart: always
         environment:
             MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+            MYSL_DATABASE: portfolio
         volumes:
-            - data:/var/lib/mysql
+            - mariadb:/var/lib/mysql
+            - ./dev/docker_mysql_init:/docker-entrypoint-initdb.d
         ports:
             - "3306:3306"
     phpmyadmin:
-        image: phpmyadmin
+        image: phpmyadmin/phpmyadmin
+        environment:
+            PMA_HOST: mariadb
         depends_on:
-            - db
+            - mariadb
         ports:
             - 8080:80
     fastapi:
