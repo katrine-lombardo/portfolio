@@ -1,11 +1,7 @@
 <?php
 
-// Database credentials
-$host = $_ENV['DB_HOST']; // Your database server host (if it's the same machine)
-$port = $_ENV['DB_PORT']; // Your database server port (default is 3306)
-$username = $_ENV['DB_USERNAME']; // Your database username
-$password = $_ENV['DB_PASSWORD']; // Your database password
-$database = $_ENV['DB_DATABASE']; // Your database name
+// Include database credentials from config.php
+require_once('config.php');
 
 // Connect to MySQL
 $mysqli = new mysqli($host, $username, $password, $database, $port);
@@ -14,7 +10,7 @@ if ($mysqli->connect_error) {
 }
 
 // Perform the database query
-$query = "SELECT * FROM products";
+$query = "SELECT * FROM testtable";
 $result = $mysqli->query($query);
 
 // Prepare data for JSON encoding
