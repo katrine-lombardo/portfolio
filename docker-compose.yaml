@@ -6,11 +6,12 @@ services:
         image: mariadb:latest
         restart: always
         environment:
-            MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-            MYSL_DATABASE: portfolio
+            MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+            MYSQL_DATABASE: ${DB_DATABASE}
+            MYSQL_USER: ${DB_USERNAME}
+            MYSQL_PASSWORD: ${DB_PASSWORD}
         volumes:
             - mariadb:/var/lib/mysql
-            - ./dev/docker_mysql_init:/docker-entrypoint-initdb.d
         ports:
             - "3306:3306"
     phpmyadmin:
@@ -26,12 +27,12 @@ services:
         environment:
             WAIT_HOSTS: db:3306
             CORS_HOST: http://localhost:5173
-            DATABASE_URL: mysql://${DB_USERNAME}:${DB_PASSWORD}@mariadb:${DB_PORT}/${DB_NAME}
+            DATABASE_URL: mysql://${DB_USERNAME}:${DB_PASSWORD}@mariadb:${DB_PORT}/${DB_DATABASE}
             DB_HOST: ${DB_HOST}
             DB_PORT: ${DB_PORT}
             DB_USERNAME: ${DB_USERNAME}
             DB_PASSWORD: ${DB_PASSWORD}
-            DB_NAME: ${DB_NAME}
+            DB_DATABASE: ${DB_DATABASE}
         build:
             context: backend
             dockerfile: Dockerfile.dev
