@@ -9,7 +9,7 @@ app.include_router(comments.router, tags=["Comments"])
 
 CORS_HOST = os.environ.get("CORS_HOST")
 if not CORS_HOST:
-    origins = ["http://localhost:5173"]
+    origins = (["http://localhost:5173", "http://www.badingo.net"],)
 else:
     origins = [CORS_HOST]
 
