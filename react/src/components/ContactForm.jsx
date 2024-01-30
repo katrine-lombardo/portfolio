@@ -4,7 +4,7 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    comments: "",
+    comment: "",
   });
 
   useEffect(() => {
@@ -25,11 +25,11 @@ const ContactForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`/backend/comments`, {
+      const response = await fetch(`http://localhost:8888/api/comments.php`, {
         method: "POST",
         body: JSON.stringify(formData),
       });
-
+      debugger;
       if (response.ok) {
         setFormData({
           name: "",
