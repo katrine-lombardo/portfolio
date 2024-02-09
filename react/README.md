@@ -38,7 +38,7 @@ Discover the projects I've worked on. I implemented my Github API here to automa
 
 Connect with me! Find my contact information, including email and social media profiles. Whether you want to discuss potential collaborations, job opportunities, or just chat about technology, I'm always open to new connections.
 
-## [Work in Progress!] Getting the App Running 
+## [Work in Progress!] Getting the App Running
 
 1. Git clone into your local repository:
 ```sh
