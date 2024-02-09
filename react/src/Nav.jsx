@@ -60,9 +60,9 @@ function Nav() {
                   ? "text-rose-900 hover:text-rose-800 underline underline-offset-8"
                   : "text-rose-500 hover:text-rose-700"
               }
-              to='/about'
+              to='/contact'
             >
-              About
+              Contact
             </NavLink>
           </li>
         </ul>
