@@ -24,7 +24,7 @@ const ListCertifications = () => {
     },
     {
       year: "2018",
-      title: "HR Workforce Analytics",
+      title: "Human Resources Workforce Analytics",
       organization: "New York University",
       link: "https://www.sps.nyu.edu/professional-pathways.html",
       description:
