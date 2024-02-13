@@ -17,26 +17,36 @@ Welcome to my portfolio project repository! This project serves as a showcase of
 
 ## Table of Contents
 
-1. [About Me](#about-me)
+1. [Home](#home)
 2. [Skills](#skills)
 3. [Projects](#projects)
 4. [Contact](#contact)
 
-## About Me
+## Home
 
-In this section, you'll find information about me - my background, education, and what drives me in the world of technology. Get to know the person behind the code.
+This is the home page for my site. In this section you'll find a quick greeting
+from me and invitation to get to know the person behind the code.
 
 ## Skills
 
-Explore a comprehensive list of my skills. From programming languages to frameworks, design tools to collaboration platforms, this section provides an overview of the tools I'm proficient with.
+Explore a comprehensive list of my skills. From programming languages to
+frameworks, design tools to collaboration platforms, this section provides an
+overview of the tools I'm proficient with.
 
 ## Projects
 
-Discover the projects I've worked on. I implemented my Github API here to automatically populate information for each of my repos. Each project is accompanied by a brief description, key features, and technologies used. Whether it's web development, machine learning, or any other area, you'll find a diverse range of projects that highlight my abilities.
+Discover the projects I've worked on. I implemented my Github API here to
+automatically populate information for each of my repos. Each project is
+accompanied by a brief description, key features, and technologies used. Whether
+it's web development, machine learning, or any other area, you'll find a diverse
+range of projects that highlight my abilities.
 
 ## Contact
 
-Connect with me! Find my contact information, including email and social media profiles. Whether you want to discuss potential collaborations, job opportunities, or just chat about technology, I'm always open to new connections.
+Connect with me! Find my contact information, including a contact form and
+social media profiles. Whether you want to discuss potential collaborations, job
+opportunities, or just chat about technology, I'm always open to new
+connections.
 
 ## [Work in Progress!] Getting the App Running
 
