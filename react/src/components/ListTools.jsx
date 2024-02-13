@@ -1,46 +1,50 @@
-import "../styles/Logos.css";
+import ToolCard from "./ToolCard";
 
 const ListTools = () => {
+  const tools = [
+    {
+      tool_name: "Docker",
+      img: "/logos/tools_docker.png",
+    },
+    {
+      tool_name: "Tailwind",
+      img: "/logos/tools_tailwind.png",
+    },
+    {
+      tool_name: "Bootstrap",
+      img: "/logos/tools_bootstrap.png",
+    },
+    {
+      tool_name: "Github",
+      img: "/logos/tools_github.png",
+    },
+    {
+      tool_name: "Gitlab",
+      img: "/logos/tools_gitlab.png",
+    },
+    {
+      tool_name: "RESTful API",
+      img: "/logos/tools_rest-api.png",
+    },
+    {
+      tool_name: "Cursor IDE",
+      img: "/logos/tools_cursor.png",
+    },
+    {
+      tool_name: "Google Drive",
+      img: "/logos/tools_google-drive.png",
+    },
+    {
+      tool_name: "Excel",
+      img: "/logos/tools_excel.png",
+    },
+  ];
+
   return (
-    <div>
-      <div className='flex overflow-x-auto space-x-7'>
-        <section className='flex-shrink-1'>
-          <div className='icons8-docker'></div>
-          <span>Docker</span>
-        </section>
-        <section className='flex-shrink-1'>
-          <div className='icons8-tailwind'></div>
-          <span>Tailwind</span>
-        </section>
-        <section className='flex-shrink-1'>
-          <div className='icons8-bootstrap'></div>
-          <span>Bootstrap</span>
-        </section>
-        <section className='flex-shrink-1'>
-          <div className='icons8-github'></div>
-          <span>Github</span>
-        </section>
-        <section className='flex-shrink-1'>
-          <div className='icons8-gitlab'></div>
-          <span>Gitlab</span>
-        </section>
-        <section className='flex-shrink-1'>
-          <div className='icons8-rest'></div>
-          <span>RESTful API</span>
-        </section>
-        <section className='flex-shrink-1'>
-          <div className='icons8-cursor'></div>
-          <span>Cursor IDE</span>
-        </section>
-        <section className='flex-shrink-1'>
-          <div className='icons8-google-drive'></div>
-          <span>Google Drive</span>
-        </section>
-        <section className='flex-shrink-1'>
-          <div className='icons8-excel'></div>
-          <span>Excel</span>
-        </section>
-      </div>
+    <div className='flex overflow-x-auto space-x-7'>
+      {tools.map((tool, index) => (
+        <ToolCard key={index} tool={tool} />
+      ))}
     </div>
   );
 };

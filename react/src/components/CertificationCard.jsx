@@ -14,7 +14,7 @@ const CertificationCard = ({ certification }) => {
 
   return (
     <div
-      className={`p-3 w-56 h-${
+      className={`p-3 w-56 mb-4 h-${
         expanded ? "auto" : "60"
       } shrink-0 m-2 rounded-md shadow-md overflow-hidden relative ${
         expanded ? "" : "overflow-hidden"
