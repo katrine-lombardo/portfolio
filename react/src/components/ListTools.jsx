@@ -41,7 +41,7 @@ const ListTools = () => {
   ];
 
   return (
-    <div className='flex overflow-x-auto space-x-7'>
+    <div className='flex overflow-x-auto space-x-7 md:justify-center'>
       {tools.map((tool, index) => (
         <CardTool key={index} tool={tool} />
       ))}

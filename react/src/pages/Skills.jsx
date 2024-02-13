@@ -4,18 +4,18 @@ import ListCertifications from "../components/ListCertifications";
 
 const Skills = () => {
   return (
-    <div className='mx-8'>
-      <div className='flex flex-col mx-auto my-9 mx-7'>
-        <div className='my-5'>
-          <h1 className='text-center mb-1'>My Technical Skills</h1>
+    <div className='mx-8 px-8'>
+      <div className='flex flex-col mx-auto content-between my-9 mx-7'>
+        <div>
+          <h1 className='text-center mb-2'>My Technical Skills</h1>
           <ListSkills />
         </div>
-        <div className='my-5'>
-          <h1 className='text-center mb-1'>My Tools</h1>
+        <div className='mt-11'>
+          <h1 className='text-center mb-2'>My Tools</h1>
           <ListTools />
         </div>
-        <div className='my-5'>
-          <h1 className='text-center mb-1'>My Certifications</h1>
+        <div className='mt-11'>
+          <h1 className='text-center mb-2'>My Certifications</h1>
           <ListCertifications />
         </div>
       </div>
