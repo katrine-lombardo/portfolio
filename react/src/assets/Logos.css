@@ -1,8 +1,14 @@
+.logo {
+  height: 64px;
+  width: 64px;
+  background-size: 100%;
+}
+
 .icons8-javascript {
   display: inline-block;
   width: 64px;
   height: 64px;
-  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAsMCwyNTYsMjU2IgpzdHlsZT0iZmlsbDojMDAwMDAwOyI+CjxkZWZzPjxsaW5lYXJHcmFkaWVudCB4MT0iMzIiIHkxPSI5LjA0MyIgeDI9IjMyIiB5Mj0iNTUuMDExIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgaWQ9ImNvbG9yLTFfVjZIU2hJencyMXg3X2dyMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjYjBiMGIwIj48L3N0b3A+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMmUyZTJlIj48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgeDE9IjQ1LjU3OCIgeTE9IjM1LjY4MSIgeDI9IjQ1LjU3OCIgeTI9IjUwLjE5MSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGlkPSJjb2xvci0yX1Y2SFNoSXp3MjF4N19ncjIiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2U4ZThlOCI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzY2NjY2NiI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IHgxPSIzNC4wODEiIHkxPSIzNS42ODEiIHgyPSIzNC4wODEiIHkyPSI1MC4xOTEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBpZD0iY29sb3ItM19WNkhTaEl6dzIxeDdfZ3IzIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNlOGU4ZTgiPjwvc3RvcD48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM2NjY2NjYiPjwvc3RvcD48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSJub25lIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJub25lIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIHRyYW5zZm9ybT0ic2NhbGUoNCw0KSIgZD0iTTU2LDEzdjM4YzAsMi44IC0yLjIsNSAtNSw1aC0zOGMtMi44LDAgLTUsLTIuMiAtNSwtNXYtMzhjMCwtMi44IDIuMiwtNSA1LC01aDM4YzIuOCwwIDUsMi4yIDUsNXoiIGlkPSJzdHJva2VNYWluU1ZHIiBmaWxsLW9wYWNpdHk9IjAuNDE5NjEiIGZpbGw9IiNkZGRkZGQiIHN0cm9rZS1vcGFjaXR5PSIwLjQxOTYxIiBzdHJva2U9IiNkZGRkZGQiIHN0cm9rZS13aWR0aD0iNiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PC9wYXRoPjxnIHRyYW5zZm9ybT0ic2NhbGUoNCw0KSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiPjxwYXRoIGQ9Ik01MSw4aC0zOGMtMi44LDAgLTUsMi4yIC01LDV2MzhjMCwyLjggMi4yLDUgNSw1aDM4YzIuOCwwIDUsLTIuMiA1LC01di0zOGMwLC0yLjggLTIuMiwtNSAtNSwtNXpNNTQsNTFjMCwxLjcgLTEuMywzIC0zLDNoLTM4Yy0xLjcsMCAtMywtMS4zIC0zLC0zdi0zOGMwLC0xLjcgMS4zLC0zIDMsLTNoMzhjMS43LDAgMywxLjMgMywzeiIgZmlsbD0idXJsKCNjb2xvci0xX1Y2SFNoSXp3MjF4N19ncjEpIj48L3BhdGg+PHBhdGggZD0iTTQ2LjcsNDEuNWwtMC44LC0wLjNjLTEuNCwtMC42IC0yLC0xIC0yLC0yYzAsLTAuOCAwLjYsLTEuNCAxLjUsLTEuNGMwLjgsMCAxLjMsMC4zIDEuOCwxYzAuMSwwLjIgMC40LDAuMyAwLjcsMC4xbDEuNywtMS4xYzAuMiwtMC4xIDAuMywtMC41IDAuMiwtMC43Yy0xLC0xLjUgLTIuNCwtMi4xIC00LjMsLTIuMWMtMi45LDAgLTQuNywxLjggLTQuNyw0LjJjMCwyLjYgMS41LDMuOSAzLjksNC44bDAuOCwwLjNjMS41LDAuNiAyLjIsMSAyLjIsMi4xYzAsMC45IC0wLjcsMS42IC0yLDEuNmMtMS40LDAgLTIuMSwtMC44IC0yLjgsLTEuOGMtMC4yLC0wLjIgLTAuNSwtMC4zIC0wLjcsLTAuMWwtMS43LDEuMWMtMC4yLDAuMSAtMC4zLDAuNCAtMC4yLDAuN2MxLDEuNyAyLjYsMyA1LjQsM2MzLjEsMCA1LjMsLTEuNiA1LjMsLTQuNWMwLC0yLjYgLTEuNSwtMy44IC00LjMsLTQuOXoiIGZpbGw9InVybCgjY29sb3ItMl9WNkhTaEl6dzIxeDdfZ3IyKSI+PC9wYXRoPjxwYXRoIGQ9Ik0zOC41LDM1aC0yLjNjLTAuMywwIC0wLjUsMC4yIC0wLjUsMC41djEwLjFjMCwxLjYgLTAuNiwyIC0xLjcsMmMtMC45LDAgLTEuNiwtMC41IC0yLjEsLTEuMmMtMC4xLC0wLjIgLTAuNCwtMC4zIC0wLjcsLTAuMWwtMS44LDEuMWMtMC4yLDAuMSAtMC4zLDAuNSAtMC4yLDAuN2MwLjksMS41IDIuNiwyLjkgNSwyLjljMi45LDAgNC44LC0xLjUgNC44LC00Ljl2LTEwLjZjMCwtMC4zIC0wLjIsLTAuNSAtMC41LC0wLjV6IiBmaWxsPSJ1cmwoI2NvbG9yLTNfVjZIU2hJencyMXg3X2dyMykiPjwvcGF0aD48L2c+PC9nPgo8L3N2Zz4=")
+  background: url("/logos/skills_javascript.png")
     50% 50% no-repeat;
   background-size: 100%;
 }
@@ -146,7 +152,7 @@
   display: inline-block;
   width: 64px;
   height: 64px;
-  background: url("/logos/icons8-development-64.png") 50% 50% no-repeat;
+  background: url("/logos/certs_development.png") 50% 50% no-repeat;
   background-size: 100%;
 }
 
@@ -154,7 +160,7 @@
   display: inline-block;
   width: 64px;
   height: 64px;
-  background: url("https://img.icons8.com/nolan/64/collaboration.png") 50% 50% no-repeat;
+  background: url("/logos/certs_collaboration.png") 50% 50% no-repeat;
   background-size: 100%;
 }
 
@@ -162,7 +168,7 @@
   display: inline-block;
   width: 64px;
   height: 64px;
-  background: url("https://img.icons8.com/nolan/64/web-analystics.png") 50% 50% no-repeat;
+  background: url("/logos/certs_web-analytics.png") 50% 50% no-repeat;
   background-size: 100%;
 }
 
@@ -170,6 +176,6 @@
   display: inline-block;
   width: 64px;
   height: 64px;
-  background: url("https://img.icons8.com/nolan/64/coach.png") 50% 50% no-repeat;
+  background: url("/logos/certs_coach.png") 50% 50% no-repeat;
   background-size: 100%;
 }

@@ -11,7 +11,7 @@ const ListCertifications = () => {
       link: "https://www.galvanize.com/hack-reactor/beginner/full-time-bootcamp/",
       description:
         "In this intensive, 5-month full-time Beginners Coding Bootcamp I learned full stack development including React, JavaScript, Python, Django, HTML, CSS, and more.",
-      imageUrl: "/logos/icons8-development-64.png",
+      imageUrl: "/logos/certs_development.png",
     },
     {
       year: "2022",
@@ -20,7 +20,7 @@ const ListCertifications = () => {
       link: "https://www.hci.org/CEP",
       description:
         "During my CEP certification I learned how to influence workplace culture, implement coaching approaches, and improve organisational results through coaching.",
-      imageUrl: "/logos/icons8-coach-64.png",
+      imageUrl: "/logos/certs_coach.png",
     },
     {
       year: "2018",
@@ -29,7 +29,7 @@ const ListCertifications = () => {
       link: "https://www.sps.nyu.edu/professional-pathways.html",
       description:
         "In this course I learned how to analyse metrics that analyze historical data, measure current issues, and predict future trends in order to provide actionable analytics reporting.",
-      imageUrl: "/logos/icons8-web-analytics-64.png",
+      imageUrl: "/logos/certs_web-analytics.png",
     },
     {
       year: "2014",
@@ -38,7 +38,7 @@ const ListCertifications = () => {
       link: "https://steinhardt.nyu.edu/",
       description:
         "As an undergrad I majored in Media, Culture, and Communication from the Steinhardt School of Culture, Education, and Human Development, with a minor in Italian.",
-      imageUrl: "/logos/icons8-collaboration-64.png",
+      imageUrl: "/logos/certs_collaboration.png",
     },
   ];
 
