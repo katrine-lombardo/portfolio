@@ -1,4 +1,4 @@
-import ToolCard from "./ToolCard";
+import CardTool from "./CardTool";
 
 const ListTools = () => {
   const tools = [
@@ -43,7 +43,7 @@ const ListTools = () => {
   return (
     <div className='flex overflow-x-auto space-x-7'>
       {tools.map((tool, index) => (
-        <ToolCard key={index} tool={tool} />
+        <CardTool key={index} tool={tool} />
       ))}
     </div>
   );

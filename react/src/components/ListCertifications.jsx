@@ -1,5 +1,5 @@
 import React from "react";
-import CertificationCard from "./CertificationCard";
+import CardCertification from "./CardCertification";
 
 const ListCertifications = () => {
   const certifications = [
@@ -44,7 +44,7 @@ const ListCertifications = () => {
   return (
     <div className='flex overflow-x-auto space-x-5 pr-4'>
       {certifications.map((certification, index) => (
-        <CertificationCard key={index} certification={certification} />
+        <CardCertification key={index} certification={certification} />
       ))}
     </div>
   );

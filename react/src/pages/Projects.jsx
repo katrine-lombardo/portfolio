@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Loading from "../Loading";
 import { Octokit } from "octokit";
 import ListProjects from "../components/ListProjects";
+import CardProject from "../components/CardProject";
 
 const token = import.meta.env.GITHUB_TOKEN;
 const octokit = new Octokit({

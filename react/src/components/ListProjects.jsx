@@ -8,7 +8,7 @@ const octokit = new Octokit({
   auth: token,
 });
 
-const ProjectCard = ({ repo }) => {
+const ListProjects = ({ repo }) => {
   const [daysSinceLastUpdate, setDaysSinceLastUpdate] = useState(0);
 
   useEffect(() => {
@@ -65,4 +65,4 @@ const ProjectCard = ({ repo }) => {
   );
 };
 
-export default ProjectCard;
+export default ListProjects;

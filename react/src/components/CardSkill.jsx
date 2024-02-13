@@ -1,6 +1,6 @@
 import React from "react";
 
-const SkillCard = ({ skill }) => {
+const CardSkill = ({ skill }) => {
   const { skill_name, img } = skill;
 
   return (
@@ -10,4 +10,4 @@ const SkillCard = ({ skill }) => {
     </div>
   );
 };
-export default SkillCard;
+export default CardSkill;

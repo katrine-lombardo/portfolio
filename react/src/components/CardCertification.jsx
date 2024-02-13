@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-
-const CertificationCard = ({ certification }) => {
+const CardCertification = ({ certification }) => {
   const { year, title, organization, link, description, imageUrl } =
     certification;
 
@@ -59,4 +58,4 @@ const CertificationCard = ({ certification }) => {
   );
 };
 
-export default CertificationCard;
+export default CardCertification;

@@ -1,6 +1,6 @@
 import React from "react";
 
-const ToolCard = ({ tool }) => {
+const CardTool = ({ tool }) => {
   const { tool_name, img } = tool;
 
   return (
@@ -10,4 +10,5 @@ const ToolCard = ({ tool }) => {
     </div>
   );
 };
-export default ToolCard;
+
+export default CardTool;
