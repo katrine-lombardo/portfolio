@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Logos.css";
 
@@ -22,7 +22,7 @@ const CertificationCard = ({ certification }) => {
     >
       <img className='mx-auto' src={imageUrl} alt={title}></img>
       <h2 className='text-sm block align-middle'>{title}</h2>
-      <h3 className='block align-middle'>
+      <h3 className='block align-middle mb-4'>
         <Link to={link} className='text-xs text-gray-500'>
           {organization}
         </Link>
