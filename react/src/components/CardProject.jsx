@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import React from "react";
 
 const CardProject = ({ repo }) => {
@@ -33,6 +35,7 @@ const CardProject = ({ repo }) => {
               <Link
                 to={repo.html_url}
                 className='text-sm font-semibold leading-6 text-gray-900 text-left'
+                target="_blank" rel="noopener noreferrer"
               >
                 <p className='text-sm font-semibold leading-6 text-gray-900 text-left'>
                   {repo.name}
