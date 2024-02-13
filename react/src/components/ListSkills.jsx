@@ -1,4 +1,3 @@
-import "../styles/Logos.css";
 import SkillCard from "./SkillCard";
 
 const ListSkills = () => {
