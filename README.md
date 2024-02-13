@@ -48,19 +48,8 @@ git clone (repo)
 ```sh
 cd portfolio
 ```
-3. *Create volumes:
+3. Start the app:
 ```sh
-docker volume create phpmyadmin
+npm run dev
 ```
-```sh
-docker volume create mariadb
-```
-4. Build the image:
-```sh
-docker-compose build
-```
-5. Run the containers:
-```sh
-docker-compose up
-```
-6. Open browser to localhost:5173
+4. Open browser to localhost:5173
