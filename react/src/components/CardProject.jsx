@@ -35,7 +35,8 @@ const CardProject = ({ repo }) => {
               <Link
                 to={repo.html_url}
                 className='text-sm font-semibold leading-6 text-gray-900 text-left'
-                target="_blank" rel="noopener noreferrer"
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 <p className='text-sm font-semibold leading-6 text-gray-900 text-left'>
                   {repo.name}

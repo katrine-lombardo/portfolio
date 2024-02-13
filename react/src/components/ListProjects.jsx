@@ -43,7 +43,6 @@ const ListProjects = ({ repo }) => {
 
   return (
     <div>
-      <h1>My Projects</h1>
       <div className='h-[calc(100vh-210px)] w-full justify-center flex'>
         <div className='flex-wrap rounded-lg border-2 p-6 m-6 overflow-y-auto'>
           {repos.map((repo) => (
