@@ -1,10 +1,12 @@
+import AboutMe from "../components/AboutMe";
+
 const HomePage = () => {
   return (
-    <div className='my-32'>
+    <div className='my-32 mx-1'>
       <div className='flex flex-wrap gap-4 justify-center items-center lg:flex-no-wrap'>
         <div className='flex-none md:shrink-0'>
           <img
-            src='domino.jpeg'
+            src='katrine_and_domino.jpeg'
             className='w-96 aspect-square object-cover rounded-full border-2'
             alt='Domino'
           />
@@ -17,14 +19,18 @@ const HomePage = () => {
           </div>
           <div>
             <p className='md:text-left my-3'>
-              Testing testing 123 Welcome to badingo.net, Katrine's portfolio
-              page built in Vite + React and deployed on GoDaddy.
+              Hello, I'm Katrine! It's nice to meet you. Welcome to badingo.net,
+              my portfolio page built in Vite + React, deployed on Plesk, and
+              domain hosted on GoDaddy.
             </p>
-          </div>
-          <div>
             <p className='md:text-left my-3'>
-              Make yourself at home, view my projects and skills, and reach out
-              to me here to start the conversation.
+              I'm a recent Hack Reactor coding bootcamp graduate and seasoned
+              workplace leader with 10+ years experience supporting rapidly
+              scaling tech startups, and a passion for problem-solving.
+            </p>
+            <p className='md:text-left my-3'>
+              Make yourself at home, view my projects and skills, and chat with
+              me about how we can work together to build something cool.
             </p>
           </div>
         </div>
