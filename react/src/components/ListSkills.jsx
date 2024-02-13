@@ -1,5 +1,4 @@
-import "../styles/Logos.css";
-import SkillCard from "./SkillCard";
+import CardSkill from "./CardSkill";
 
 const ListSkills = () => {
   const skills = [
@@ -45,7 +44,7 @@ const ListSkills = () => {
     <div>
       <div className='flex overflow-x-auto space-x-7'>
         {skills.map((skill, index) => (
-          <SkillCard key={index} skill={skill} />
+          <CardSkill key={index} skill={skill} />
         ))}
       </div>
     </div>

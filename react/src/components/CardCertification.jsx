@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../styles/Logos.css";
 
-const CertificationCard = ({ certification }) => {
+const CardCertification = ({ certification }) => {
   const { year, title, organization, link, description, imageUrl } =
     certification;
 
@@ -14,7 +13,7 @@ const CertificationCard = ({ certification }) => {
 
   return (
     <div
-      className={`p-3 w-56 h-${
+      className={`p-3 w-56 mb-4 h-${
         expanded ? "auto" : "60"
       } shrink-0 m-2 rounded-md shadow-md overflow-hidden relative ${
         expanded ? "" : "overflow-hidden"
@@ -59,4 +58,4 @@ const CertificationCard = ({ certification }) => {
   );
 };
 
-export default CertificationCard;
+export default CardCertification;

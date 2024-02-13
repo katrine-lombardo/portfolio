@@ -1,10 +1,10 @@
-import ContactForm from "../components/ContactForm";
+import FormContact from "../components/FormContact";
 
 const Contact = () => {
   return (
     <div className='columns-1 p-8'>
       <div className='flex justify-center'>
-        <ContactForm />
+        <FormContact />
       </div>
     </div>
   );
