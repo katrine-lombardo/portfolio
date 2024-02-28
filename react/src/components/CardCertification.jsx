@@ -22,7 +22,12 @@ const CardCertification = ({ certification }) => {
       <img className='mx-auto' src={imageUrl} alt={title}></img>
       <h2 className='text-sm block align-middle'>{title}</h2>
       <h3 className='block align-middle mb-4'>
-        <Link to={link} className='text-xs text-gray-500'>
+        <Link
+          to={link}
+          className='text-xs text-gray-500'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           {organization}
         </Link>
       </h3>
