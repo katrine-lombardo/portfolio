@@ -25,8 +25,11 @@ const FormContact = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`http://badingo.net/api/comments.php`, {
+      const response = await fetch(`https://badingo.net/api/comments.php`, {
         method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify(formData),
       });
       console.log("Made it past the initial fetch");
