@@ -8,7 +8,7 @@ function Nav() {
           <li className='mr-6'>
             <NavLink to='/' end>
               <img
-                src='/badingo_clean.png'
+                src='/images/badingo_clean.png'
                 className='w-12 rounded-lg'
                 alt='badingo_clean'
               />

@@ -4,7 +4,7 @@ const AboutMe = () => {
       <div className='flex flex-col-reverse md:flex-row gap-6 justify-center items-center'>
         <div className='flex-none md:order-1 md:shrink-0'>
           <img
-            src='./katrine_and_domino.jpeg'
+            src='./images/katrine_and_domino.jpeg'
             className='w-96 aspect-square object-cover rounded-full border-2'
             alt='Domino'
           />
