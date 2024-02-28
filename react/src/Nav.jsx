@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 function Nav() {
@@ -9,7 +8,7 @@ function Nav() {
           <li className='mr-6'>
             <NavLink to='/' end>
               <img
-                src='badingo_clean.png'
+                src='/badingo_clean.png'
                 className='w-12 rounded-lg'
                 alt='badingo_clean'
               />
