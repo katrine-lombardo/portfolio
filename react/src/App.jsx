@@ -11,16 +11,14 @@ import "./styles/App.css";
 function App() {
   return (
     <BrowserRouter>
-      <div className='flex flex-col justify-between'>
-        <Nav />
-        <Routes>
-          <Route path='/*' element={<HomePage />} />
-          <Route path='/projects' element={<Projects />} />
-          <Route path='/skills' element={<Skills />} />
-          <Route path='/contact' element={<Contact />} />
-        </Routes>
-        <Footer />
-      </div>
+      <Nav />
+      <Routes>
+        <Route path='/*' element={<HomePage />} />
+        <Route path='/projects' element={<Projects />} />
+        <Route path='/skills' element={<Skills />} />
+        <Route path='/contact' element={<Contact />} />
+      </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
