@@ -8,7 +8,7 @@ const FormContact = () => {
   });
 
   useEffect(() => {
-    document.title = `About Me`;
+    document.title = `Contact`;
   }, []);
 
   const handleFormChange = (e) => {
@@ -25,16 +25,16 @@ const FormContact = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`http://localhost:8888/api/comments.php`, {
+      const response = await fetch(`http://badingo.net/api/comments.php`, {
         method: "POST",
         body: JSON.stringify(formData),
       });
-      debugger;
+      console.log("Made it past the initial fetch");
       if (response.ok) {
         setFormData({
           name: "",
           email: "",
-          comments: "",
+          comment: "",
         });
       } else {
         console.error("Error posting comment: ", response.statusText);
@@ -77,10 +77,10 @@ const FormContact = () => {
         <label className='block text-left'>
           <span className='text-gray-700'>Comments</span>
           <textarea
-            id='comments'
+            id='comment'
             placeholder='Share your thoughts here'
-            name='comments'
-            value={formData.comments}
+            name='comment'
+            value={formData.comment}
             onChange={handleFormChange}
             className='mt-1 w-full block rounded-md p-2 bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0'
             required
