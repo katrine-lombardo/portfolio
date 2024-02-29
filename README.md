@@ -47,7 +47,7 @@ social media profiles. Whether you want to discuss potential collaborations, job
 opportunities, or just chat about technology, I'm always open to new
 connections.
 
-## [Work in Progress!] Getting the App Running
+## Getting the App Running
 
 1. Git clone into your local repository:
 ```sh
