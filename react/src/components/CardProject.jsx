@@ -6,7 +6,7 @@ const CardProject = ({ repo }) => {
   const [daysSinceLastUpdate, setDaysSinceLastUpdate] = useState(0);
 
   useEffect(() => {
-    const lastUpdated = new Date(repo.updated_at);
+    const lastUpdated = new Date(repo.pushed_at);
     const now = new Date();
     const diffTime = Math.abs(now - lastUpdated);
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
@@ -50,9 +50,9 @@ const CardProject = ({ repo }) => {
           <div className='hidden shrink-0 sm:flex sm:flex-col sm:items-end'>
             <p className='text-sm leading-6 text-gray-900'>{repo.language}</p>
             <p className='mt-1 text-xs leading-5 text-gray-500'>
-              {daysSinceLastUpdate === -1
+              {daysSinceLastUpdate === 1
                 ? "Updated today"
-                : `Last updated ${daysSinceLastUpdate} days ago`}
+                : `Last push ${daysSinceLastUpdate} days ago`}
             </p>
           </div>
         </li>

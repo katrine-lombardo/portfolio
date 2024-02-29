@@ -20,7 +20,7 @@ const ListProjects = ({ repo }) => {
           "GET /users/katrine-lombardo/repos",
           {
             username: "katrine-lombardo",
-            sort: "updated",
+            sort: "pushed",
             direction: "desc",
             headers: {
               "X-GitHub-Api-Version": "2022-11-28",
