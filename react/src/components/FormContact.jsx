@@ -15,10 +15,10 @@ const FormContact = () => {
     const value = e.target.value;
     const inputName = e.target.name;
 
-    setFormData({
-      ...formData,
+    setFormData((prevFormData) => ({
+      ...prevFormData,
       [inputName]: value,
-    });
+    }));
   };
 
   const handleSubmit = async (e) => {
@@ -32,7 +32,7 @@ const FormContact = () => {
         },
         body: JSON.stringify(formData),
       });
-      console.log("Made it past the initial fetch");
+
       if (response.ok) {
         setFormData({
           name: "",
@@ -62,7 +62,7 @@ const FormContact = () => {
             className='mt-1 w-full block rounded-md p-2 bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0'
             required
             placeholder=''
-          ></input>
+          />
         </label>
         <label className='block text-left mb-5'>
           <span className='text-gray-700'>Email address</span>
@@ -75,7 +75,7 @@ const FormContact = () => {
             className='mt-1 w-full block rounded-md p-2 bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0'
             required
             placeholder='domino@badingo.net'
-          ></input>
+          />
         </label>
         <label className='block text-left'>
           <span className='text-gray-700'>Comments</span>
@@ -88,7 +88,7 @@ const FormContact = () => {
             className='mt-1 w-full block rounded-md p-2 bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0'
             required
             rows='3'
-          ></textarea>
+          />
         </label>
         <button
           type='submit'
