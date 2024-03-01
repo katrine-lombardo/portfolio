@@ -1,9 +1,11 @@
 import FormContact from "../components/FormContact";
+import SubmitSuccess from "../components/SubmitSuccess";
+import SubmitError from "../components/SubmitError";
 
 const Contact = () => {
   return (
-    <div className='columns-1 p-8'>
-      <div className='flex justify-center'>
+    <div className='flex flex-col justify-center p-6'>
+      <div className='flex-col'>
         <FormContact />
       </div>
     </div>
