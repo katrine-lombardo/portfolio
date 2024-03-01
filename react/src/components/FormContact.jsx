@@ -72,7 +72,7 @@ const FormContact = () => {
           <SubmitError />
         </div>
       )}
-      <div className='md:w-3/5 justify-center mx-auto p-10 m-5 shadow-md rounded-xl'>
+      <div className='md:w-3/5 justify-center mx-auto p-10 shadow-md rounded-xl'>
         <h1>Let's chat</h1>
         <form onSubmit={handleSubmit}>
           <label className='block text-left mb-5'>

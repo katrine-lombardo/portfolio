@@ -4,7 +4,7 @@ import SubmitError from "../components/SubmitError";
 
 const Contact = () => {
   return (
-    <div className='flex flex-col justify-center p-6'>
+    <div className='flex flex-col justify-center px-6'>
       <div className='flex-col'>
         <FormContact />
       </div>
