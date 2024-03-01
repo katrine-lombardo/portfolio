@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 function Nav() {
   return (
-    <div className='flex flex-col justify-between'>
+    <div className='flex flex-col justify-between sticky top-0'>
       <div className='bg-gradient-to-r from-slate-50 to-slate-100 w-screen mb-5'>
         <ul className='flex items-center justify-center p-6'>
           <li className='mr-6'>
