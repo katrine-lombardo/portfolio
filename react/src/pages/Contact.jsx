@@ -4,14 +4,8 @@ import SubmitError from "../components/SubmitError";
 
 const Contact = () => {
   return (
-    <div className='columns-1 p-8'>
-      <div className='mx-auto'>
-        <SubmitError />
-      </div>
-      <div className='mx-auto'>
-        <SubmitSuccess />
-      </div>
-      <div className='flex justify-center'>
+    <div className='flex flex-col justify-center p-6'>
+      <div className='flex-col'>
         <FormContact />
       </div>
     </div>
