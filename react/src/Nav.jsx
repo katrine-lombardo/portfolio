@@ -1,73 +1,84 @@
 import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
 
-function Nav() {
+const Nav = () => {
   return (
-    <div className='flex flex-col justify-between sticky top-0'>
-      <div className='bg-gradient-to-r from-slate-50 to-slate-100 w-screen mb-5'>
-        <ul className='flex items-center justify-center p-6 gap-6'>
-          <li className=''>
-            <NavLink to='/' end>
-              <img
-                src='/images/badingo_clean.png'
-                className='w-12 rounded-lg'
-                alt='badingo_clean'
-              />
-            </NavLink>
-          </li>
-          <li className='flex-grow'></li>
-          <li className=''>
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                  ? "text-rose-900 hover:text-rose-800 underline underline-offset-8"
-                  : "text-rose-500 hover:text-rose-700"
-              }
-              to='/'
-              end
-            >
-              Home
-            </NavLink>
-          </li>
-          <li className=''>
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                  ? "text-rose-900 hover:text-rose-800 underline underline-offset-8"
-                  : "text-rose-500 hover:text-rose-700"
-              }
-              to='/projects'
-            >
-              Projects
-            </NavLink>
-          </li>
-          <li className=''>
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                  ? "text-rose-900 hover:text-rose-800 underline underline-offset-8"
-                  : "text-rose-500 hover:text-rose-700"
-              }
-              to='/skills'
-            >
-              Skills
-            </NavLink>
-          </li>
-          <li className=''>
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                  ? "text-rose-900 hover:text-rose-800 underline underline-offset-8"
-                  : "text-rose-500 hover:text-rose-700"
-              }
-              to='/contact'
-            >
-              Contact
-            </NavLink>
-          </li>
-        </ul>
+    <nav className='flex items-center justify-between flex-wrap sticky top-0 bg-gradient-to-r from-slate-50 to-slate-100 w-screen mb-5 p-6 gap-6'>
+      <div className='block'>
+        <NavLink to='/' end>
+          <img
+            src='/images/badingo_clean.png'
+            className='min-w-12 max-w-12 rounded-lg'
+            alt='badingo_clean'
+          />
+        </NavLink>
       </div>
-    </div>
+      <div className='shrink w-fit'></div>
+      <div className='flex gap-8'>
+        <div className='hidden md:block'>
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? "text-rose-900 hover:text-rose-800 underline underline-offset-8"
+                : "text-rose-500 hover:text-rose-700"
+            }
+            to='/'
+            end
+          >
+            Home
+          </NavLink>
+        </div>
+        <div className='hidden md:block'>
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? "text-rose-900 hover:text-rose-800 underline underline-offset-8"
+                : "text-rose-500 hover:text-rose-700"
+            }
+            to='/projects'
+          >
+            Projects
+          </NavLink>
+        </div>
+        <div className='hidden md:block'>
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? "text-rose-900 hover:text-rose-800 underline underline-offset-8"
+                : "text-rose-500 hover:text-rose-700"
+            }
+            to='/skills'
+          >
+            Skills
+          </NavLink>
+        </div>
+        <div className='hidden md:block'>
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? "text-rose-900 hover:text-rose-800 underline underline-offset-8"
+                : "text-rose-500 hover:text-rose-700"
+            }
+            to='/contact'
+          >
+            Contact
+          </NavLink>
+        </div>
+      </div>
+      <div class='block md:hidden'>
+        <button class='flex items-center px-3 py-2 border rounded text-rose-300 border-rose-300 bg-rose-100 hover:text-rose-600 hover:border-rose-600 hover:bg-rose-200'>
+          <svg
+            class='fill-current h-3 w-3'
+            viewBox='0 0 20 20'
+            xmlns='http://www.w3.org/2000/svg'
+          >
+            <title>Menu</title>
+            <path d='M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z' />
+          </svg>
+        </button>
+      </div>
+    </nav>
   );
-}
+};
 
 export default Nav;
