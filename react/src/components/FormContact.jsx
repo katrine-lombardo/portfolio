@@ -44,10 +44,16 @@ const FormContact = () => {
           comment: "",
         });
         setSubmitSuccess(true);
+        setTimeout(() => {
+          setSubmitSuccess(false);
+        }, 3000);
       } else {
         console.error("Error posting comment: ", response.statusText);
         setSubmitSuccess(false);
         setSubmitError(true);
+        setTimeout(() => {
+          setSubmitError(false);
+        }, 3000);
       }
     } catch (error) {
       console.error("Error posting comment: ", error);
