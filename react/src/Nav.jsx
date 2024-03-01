@@ -4,8 +4,8 @@ function Nav() {
   return (
     <div className='flex flex-col justify-between sticky top-0'>
       <div className='bg-gradient-to-r from-slate-50 to-slate-100 w-screen mb-5'>
-        <ul className='flex items-center justify-center p-6'>
-          <li className='mr-6'>
+        <ul className='flex items-center justify-center p-6 gap-6'>
+          <li className=''>
             <NavLink to='/' end>
               <img
                 src='/images/badingo_clean.png'
@@ -15,7 +15,7 @@ function Nav() {
             </NavLink>
           </li>
           <li className='flex-grow'></li>
-          <li className='mr-6'>
+          <li className=''>
             <NavLink
               className={({ isActive }) =>
                 isActive
@@ -28,7 +28,7 @@ function Nav() {
               Home
             </NavLink>
           </li>
-          <li className='mr-6'>
+          <li className=''>
             <NavLink
               className={({ isActive }) =>
                 isActive
@@ -40,7 +40,7 @@ function Nav() {
               Projects
             </NavLink>
           </li>
-          <li className='mr-6'>
+          <li className=''>
             <NavLink
               className={({ isActive }) =>
                 isActive
@@ -52,7 +52,7 @@ function Nav() {
               Skills
             </NavLink>
           </li>
-          <li className='mr-6'>
+          <li className=''>
             <NavLink
               className={({ isActive }) =>
                 isActive
