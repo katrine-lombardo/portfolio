@@ -1,8 +1,13 @@
+import React, { useEffect } from "react";
 import AboutMe from "../components/AboutMe";
 
 const HomePage = () => {
+  useEffect(() => {
+    document.title = `Home    ・    Badingo.net`;
+  }, []);
+
   return (
-    <div>
+    <div className='flex md:mx-6 md:min-h-[200px] md:mt-20'>
       <AboutMe />
     </div>
   );

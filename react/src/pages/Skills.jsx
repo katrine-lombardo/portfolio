@@ -1,8 +1,13 @@
+import React, { useEffect } from "react";
 import ListSkills from "../components/ListSkills";
 import ListTools from "../components/ListTools";
 import ListCertifications from "../components/ListCertifications";
 
 const Skills = () => {
+  useEffect(() => {
+    document.title = `Skills    ・    Badingo.net`;
+  }, []);
+
   return (
     <div className='mx-8 px-8'>
       <div className='flex flex-col mx-auto content-between my-9 mx-7'>

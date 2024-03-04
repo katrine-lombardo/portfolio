@@ -3,7 +3,7 @@ import ListProjects from "../components/ListProjects";
 
 const Projects = () => {
   useEffect(() => {
-    document.title = `Projects`;
+    document.title = `Projects    ・    Badingo.net`;
   }, []);
 
   return (
