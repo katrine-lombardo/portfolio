@@ -66,11 +66,13 @@ const Nav = () => {
         </NavLink>
         <div className='shrink w-fit'></div>
       </div>
-      <nav className='hidden md:flex space-x-4'>{navList()}</nav>
+      <nav className='hidden md:flex items-center justify-between gap-8'>
+        {navList()}
+      </nav>
       <div
         className={`${
           openNav ? "" : "hidden"
-        } flex items-center justify-between gap-8`}
+        } md:hidden flex items-center justify-between gap-8`}
       >
         <React.Fragment>{navList()}</React.Fragment>
       </div>
