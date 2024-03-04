@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ListProjects from "../components/ListProjects";
 
 const Projects = () => {
+  useEffect(() => {
+    document.title = `Projects`;
+  }, []);
+
   return (
-    <div className='columns-1 p-8'>
+    <div className='flex flex-col p-8'>
       <h1>My Projects</h1>
-      <div className='flex justify-center'>
+      <div className=' justify-center'>
         <ListProjects />
       </div>
     </div>
