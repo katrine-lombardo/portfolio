@@ -21,8 +21,8 @@ const Nav = () => {
 
   const getNavLinkClass = (isActive) =>
     isActive
-      ? "text-rose-900 hover:text-rose-800 underline underline-offset-8"
-      : "text-rose-500 hover:text-rose-700";
+      ? "text-rose-500 hover:text-rose-700 underline underline-offset-8"
+      : "text-gray-600 hover:text-rose-800";
 
   const navLinks = [
     { path: "/", label: "Home" },
@@ -55,24 +55,19 @@ const Nav = () => {
   );
 
   return (
-    <div className='flex items-center justify-between flex-wrap sticky top-0 bg-gradient-to-r from-slate-50 to-slate-100 w-screen mb-5 p-6 gap-6'>
-      <div className='block'>
-        <NavLink to='/' end>
-          <img
-            src='/images/badingo_clean.png'
-            className='min-w-12 max-w-12 rounded-lg'
-            alt='badingo logo'
-          />
-        </NavLink>
-        <div className='shrink w-fit'></div>
-      </div>
-      <nav className='hidden md:flex items-center justify-between gap-8'>
-        {navList()}
-      </nav>
+    <div className='flex items-center justify-between flex-wrap sticky top-0 bg-gradient-to-r from-slate-50 to-slate-100 w-screen mb-5 py-6 px-6'>
+      <NavLink to='/' end>
+        <img
+          src='/images/badingo_clean.png'
+          className='min-w-12 max-w-12 rounded-lg'
+          alt='badingo logo'
+        />
+      </NavLink>
+      <nav className='hidden md:flex md:space-x-6'>{navList()}</nav>
       <div
         className={`${
-          openNav ? "" : "hidden"
-        } md:hidden flex items-center justify-between gap-8`}
+          openNav ? "justify-around" : "hidden"
+        } md:hidden flex grow items-center justify-between w-fit`}
       >
         <React.Fragment>{navList()}</React.Fragment>
       </div>
