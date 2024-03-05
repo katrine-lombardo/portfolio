@@ -42,16 +42,12 @@ const ListProjects = ({ repo }) => {
   }
 
   return (
-    <div>
-      <div className='h-[calc(100vh-210px)] w-full justify-center flex'>
-        <div className='flex-wrap rounded-lg border-2 p-6 m-6 overflow-y-auto'>
-          {repos.map((repo) => (
-            <div className='mb-4'>
-              <CardProject key={repo.id} repo={repo} />
-            </div>
-          ))}
+    <div className='flex flex-wrap items-start justify-center items-stretch'>
+      {repos.map((repo) => (
+        <div className='m-4'>
+          <CardProject key={repo.id} repo={repo} />
         </div>
-      </div>
+      ))}
     </div>
   );
 };
