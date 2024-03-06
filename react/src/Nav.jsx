@@ -55,7 +55,7 @@ const Nav = () => {
   );
 
   return (
-    <div className='flex items-center justify-between flex-wrap sticky top-0 bg-gradient-to-r from-slate-50 to-slate-100 w-screen mb-5 py-6 px-6'>
+    <div className='flex items-center justify-between sticky top-0 bg-gradient-to-r from-slate-50 to-slate-100 md:w-full mb-5 py-6 px-6'>
       <NavLink to='/' end>
         <img
           src='/images/badingo_clean.png'
@@ -63,15 +63,17 @@ const Nav = () => {
           alt='badingo logo'
         />
       </NavLink>
-      <nav className='hidden md:flex md:space-x-6'>{navList()}</nav>
+      <div className='md:flex md:flex-grow'></div>
+      <div className='hidden md:flex md:justify-between md:gap-x-4'>
+        {navList()}
+      </div>
       <div
         className={`${
           openNav ? "justify-around" : "hidden"
         } md:hidden flex grow items-center justify-between w-fit`}
       >
-        <React.Fragment>{navList()}</React.Fragment>
+        {navList()}
       </div>
-
       <button
         onClick={toggleNav}
         className='block md:hidden items-center px-3 py-2 border rounded text-rose-300 border-rose-300 bg-rose-100 hover:text-rose-600 hover:border-rose-600 hover:bg-rose-200'

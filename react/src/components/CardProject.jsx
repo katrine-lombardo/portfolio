@@ -35,7 +35,7 @@ const CardProject = ({ repo }) => {
       <div className='m-0 overflow-hidden text-gray-700 bg-transparent rounded-none shadow-none bg-clip-border'>
         <img src={imageSrc} alt='github repo image' />
       </div>
-      <div className='p-6 '>
+      <div className='p-6'>
         <div className='flex flex-wrap justify-between'>
           <Link
             to={repo.html_url}
