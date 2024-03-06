@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import React from "react";
-import GithubLogo from "/images/github_template_image.png";
 
 const CardProject = ({ repo }) => {
   const [daysSinceLastUpdate, setDaysSinceLastUpdate] = useState(0);
+  const [imageSrc, setImageSrc] = useState(
+    "./images/github_template_image.png"
+  );
 
   useEffect(() => {
     const lastUpdated = new Date(repo.pushed_at);
@@ -20,12 +22,18 @@ const CardProject = ({ repo }) => {
     } else {
       setDaysSinceLastUpdate(diffDays);
     }
+
+    const imagePath = `./images/github_${repo.id}.png`;
+    const img = new Image();
+    img.src = imagePath;
+    img.onload = () => setImageSrc(imagePath);
+    img.onerror = () => setImageSrc("./images/github_template_image.png");
   }, [repo]);
 
   return (
     <div className='relative flex max-w-[24rem] flex-col overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-md'>
       <div className='relative m-0 overflow-hidden text-gray-700 bg-transparent rounded-none shadow-none bg-clip-border'>
-        <img src='./images/github_template_image.png' alt='github repo image' />
+        <img src={imageSrc} alt='github repo image' />
       </div>
       <div className='p-6'>
         <div className='flex flex-wrap justify-between'>
