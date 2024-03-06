@@ -27,7 +27,7 @@ const CardProject = ({ repo }) => {
     const img = new Image();
     img.src = imagePath;
     img.onload = () => setImageSrc(imagePath);
-    img.onerror = () => setImageSrc("./images/github_template_image.png");
+    img.onerror = () => setImageSrc("./images/github_tbd.png");
   }, [repo]);
 
   return (
