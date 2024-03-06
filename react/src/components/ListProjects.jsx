@@ -42,9 +42,9 @@ const ListProjects = ({ repo }) => {
   }
 
   return (
-    <div className='flex flex-wrap items-start justify-center items-stretch'>
+    <div className='flex flex-wrap items-start justify-center'>
       {repos.map((repo) => (
-        <div className='m-4'>
+        <div className='p-4'>
           <CardProject key={repo.id} repo={repo} />
         </div>
       ))}
