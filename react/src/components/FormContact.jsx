@@ -3,10 +3,6 @@ import SubmitError from "./SubmitError";
 import SubmitSuccess from "./SubmitSuccess";
 
 const FormContact = () => {
-  useEffect(() => {
-    document.title = `Contact`;
-  }, []);
-
   const [formData, setFormData] = useState({
     name: "",
     email: "",

@@ -10,7 +10,7 @@ const Messages = () => {
   return (
     <div className='flex flex-col justify-center px-6'>
       <div className='flex-col'>
-        <ListMessages />
+        <FormLogin />
       </div>
     </div>
   );
