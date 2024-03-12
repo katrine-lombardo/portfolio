@@ -1,10 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import FormLogin from "../components/FormLogin";
 import ListComments from "../components/ListComments";
-import SubmitError from "../components/SubmitError";
-import SubmitSuccess from "../components/SubmitSuccess";
+import { LoginContext } from "../components/ContextLogin";
 
 const Messages = () => {
+  const { isLoggedIn } = useContext(LoginContext);
+
   useEffect(() => {
     document.title = `Messages    ・    Badingo.net`;
   }, []);
@@ -12,16 +13,18 @@ const Messages = () => {
   return (
     <div className='my-9 mx-7'>
       <div className='flex-col'>
-        <div>
-          <FormLogin />
-        </div>
-
-        <div>
-          <h1>Messages </h1>
-          <div className=' flex flex-wrap rounded-lg border-2 p-6 m-6 overflow-y-auto'>
-            <ListComments />
+        {isLoggedIn ? (
+          <div>
+            <h1>Messages </h1>
+            <div className=' flex flex-wrap rounded-lg border-2 p-6 m-6 overflow-y-auto'>
+              <ListComments />
+            </div>
           </div>
-        </div>
+        ) : (
+          <div>
+            <FormLogin />
+          </div>
+        )}
       </div>
     </div>
   );

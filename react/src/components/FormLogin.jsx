@@ -1,10 +1,14 @@
 import { useEffect, useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import SubmitError from "./SubmitError";
+import SubmitSuccess from "./SubmitSuccess";
 
 const FormLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordVisible, setPasswordVisible] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
   const navigate = useNavigate();
 
   const togglePasswordVisibility = () => {
@@ -14,29 +18,45 @@ const FormLogin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      const response = await fetch("https://badingo.net/api/validate.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, password }),
+      });
+      const data = await response.json();
+      console.log("data: ", data);
+
+      if (data.status === "success") {
+        setSubmitSuccess(true);
+        setTimeout(() => {
+          setSubmitSuccess(false);
+        }, 3000);
+      } else {
+        console.error("Error logging in: ", data.message);
+        setSubmitError(true);
+        setTimeout(() => {
+          setSubmitError(false);
+        }, 3000);
+      }
     } catch (error) {
       console.error("An error occurred during login: ", error);
     }
   };
 
-  // useEffect(() => {
-  //   if (email === "domino@doggy.com") {
-  //     navigate("/messages");
-  //   }
-  // }, [email]);
-
-  // const togglePasswordButton = ({ path }) => {
-  //   <svg
-  //     className='fill-current h-3 w-3'
-  //     viewBox='0 0 20 20'
-  //     xmlns='http://www.w3.org/2000/svg'
-  //   >
-  //     <path d={path} />
-  //   </svg>;
-  // };
-
   return (
     <div className='md:w-3/5 justify-center mx-auto p-10 shadow-md rounded-xl'>
+      {submitSuccess && (
+        <div>
+          <SubmitSuccess />
+        </div>
+      )}
+      {submitError && (
+        <div>
+          <SubmitError />
+        </div>
+      )}
       <h1>Admin Login</h1>
       <form onSubmit={handleSubmit}>
         <label className='block text-left mb-5'>
