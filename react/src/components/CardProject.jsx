@@ -55,7 +55,7 @@ const CardProject = ({ repo }) => {
           {repo.description}
         </p>
         <div className='flex flex-wrap items-end justify-between mt-3'>
-          <div class='h-fit items-center rounded-sm bg-gray-50 px-2 py-1 text-xs text-gray-400'>
+          <div className='h-fit items-center rounded-sm bg-gray-50 px-2 py-1 text-xs text-gray-400'>
             {repo.language}
           </div>
           <button className='overflow-y-hidden px-3 py-2 border rounded text-rose-300 border-rose-300 bg-rose-100 hover:text-rose-600 hover:border-rose-600 hover:bg-rose-200 transition  hover:-translate-y-1 '>

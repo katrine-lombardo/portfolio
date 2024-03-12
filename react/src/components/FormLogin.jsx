@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import SubmitError from "./SubmitError";
 import SubmitSuccess from "./SubmitSuccess";
+import { LoginContext } from "./ContextLogin";
 
 const FormLogin = () => {
   const [email, setEmail] = useState("");
@@ -9,6 +10,7 @@ const FormLogin = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [submitError, setSubmitError] = useState(false);
+  const { setIsLoggedIn } = useContext(LoginContext);
   const navigate = useNavigate();
 
   const togglePasswordVisibility = () => {
@@ -26,12 +28,13 @@ const FormLogin = () => {
         body: JSON.stringify({ email, password }),
       });
       const data = await response.json();
-      console.log("data: ", data);
 
       if (data.status === "success") {
         setSubmitSuccess(true);
+        setIsLoggedIn(true);
         setTimeout(() => {
           setSubmitSuccess(false);
+          navigate("/messages");
         }, 3000);
       } else {
         console.error("Error logging in: ", data.message);
