@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import FormLogin from "../components/FormLogin";
-import ListMessages from "../components/ListMessages";
+import ListComments from "../components/ListComments";
 
 const Messages = () => {
   useEffect(() => {
@@ -8,9 +8,18 @@ const Messages = () => {
   }, []);
 
   return (
-    <div className='flex flex-col justify-center px-6'>
+    <div className='my-9 mx-7'>
       <div className='flex-col'>
-        <FormLogin />
+        <div>
+          <FormLogin />
+        </div>
+
+        <div>
+          <h1>List of messages </h1>
+          <div className='flex justify-items-center overflow-y-auto'>
+            <ListComments />
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -1,28 +1,44 @@
 import { useEffect, useState } from "react";
+import { useNavigate, Link } from "react-router-dom";
 
 const FormLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordVisible, setPasswordVisible] = useState(false);
+  const navigate = useNavigate();
 
   const togglePasswordVisibility = () => {
     setPasswordVisible(!passwordVisible);
   };
 
-  const togglePasswordButton = ({ path }) => {
-    <svg
-      className='fill-current h-3 w-3'
-      viewBox='0 0 20 20'
-      xmlns='http://www.w3.org/2000/svg'
-    >
-      <path d={path} />
-    </svg>;
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+    } catch (error) {
+      console.error("An error occurred during login: ", error);
+    }
   };
+
+  // useEffect(() => {
+  //   if (email === "domino@doggy.com") {
+  //     navigate("/messages");
+  //   }
+  // }, [email]);
+
+  // const togglePasswordButton = ({ path }) => {
+  //   <svg
+  //     className='fill-current h-3 w-3'
+  //     viewBox='0 0 20 20'
+  //     xmlns='http://www.w3.org/2000/svg'
+  //   >
+  //     <path d={path} />
+  //   </svg>;
+  // };
 
   return (
     <div className='md:w-3/5 justify-center mx-auto p-10 shadow-md rounded-xl'>
       <h1>Admin Login</h1>
-      <form>
+      <form onSubmit={handleSubmit}>
         <label className='block text-left mb-5'>
           <span className='text-gray-700'>Email</span>
           <input
@@ -58,6 +74,12 @@ const FormLogin = () => {
             </button>
           </div>
         </label>
+        <button
+          type='submit'
+          className='mt-6 text-white bg-rose-800 hover:bg-rose-600 p-2 shadow-md rounded-xl focus:outline-none focus:ring focus:ring-rose-200'
+        >
+          Log in
+        </button>
       </form>
     </div>
   );
