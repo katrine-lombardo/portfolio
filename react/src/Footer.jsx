@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -9,7 +9,8 @@ const Footer = () => {
         <Link to='https://icons8.com' target='_blank' rel='noopener noreferrer'>
           Icons8
         </Link>{" "}
-        ・ Site by Katrine ・ Inspiration by Domino
+        ・ Site by <NavLink to='/messages'> Katrine</NavLink> ・ Inspiration by
+        Domino
       </div>
     </footer>
   );

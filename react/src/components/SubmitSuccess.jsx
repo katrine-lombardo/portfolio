@@ -7,7 +7,7 @@ const SubmitSuccess = () => {
       role='alert'
     >
       <strong className='font-bold'>Success! </strong>
-      <span className='block sm:inline'>Your comment was submitted.</span>
+      <span className='block sm:inline'>This was submitted.</span>
       <span className='absolute top-0 bottom-0 right-0 px-4 py-3'>
         <svg
           className='fill-current h-6 w-6 text-green-500'

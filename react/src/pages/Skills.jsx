@@ -9,7 +9,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <div className='mx-8 px-8'>
+    <div className='my-9 mx-7'>
       <div className='flex flex-col mx-auto content-between my-9 mx-7'>
         <div>
           <h1 className='text-center mb-2'>My Technical Skills</h1>
