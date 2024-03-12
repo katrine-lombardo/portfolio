@@ -58,17 +58,17 @@ const FormContact = () => {
 
   return (
     <>
-      {submitSuccess && (
-        <div>
-          <SubmitSuccess />
-        </div>
-      )}
-      {submitError && (
-        <div>
-          <SubmitError />
-        </div>
-      )}
       <div className='md:w-3/5 justify-center mx-auto p-10 shadow-md rounded-xl'>
+        {submitSuccess && (
+          <div>
+            <SubmitSuccess />
+          </div>
+        )}
+        {submitError && (
+          <div>
+            <SubmitError />
+          </div>
+        )}
         <h1>Let's chat</h1>
         <form onSubmit={handleSubmit}>
           <label className='block text-left mb-5'>
