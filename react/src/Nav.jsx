@@ -59,7 +59,7 @@ const Nav = () => {
       <NavLink to='/' end>
         <img
           src='/images/badingo_busted.png'
-          className='min-w-12 max-w-12 rounded-lg'
+          className='min-w-12 max-w-12 rounded-lg hue-rotate-30'
           alt='badingo logo'
         />
       </NavLink>
@@ -76,7 +76,12 @@ const Nav = () => {
       </div>
       <button
         onClick={toggleNav}
-        className='block md:hidden items-center px-3 py-2 border rounded text-rose-300 border-rose-300 bg-rose-100 hover:text-rose-600 hover:border-rose-600 hover:bg-rose-200'
+        className='block md:hidden items-center px-3 py-2 rounded-md shadow-md shadow-slate-300 text-rose-600 border-rose-200
+        bg-gradient-to-br from-rose-50 to-rose-100
+        hover:text-rose-600
+        hover:border-rose-300
+        hover:bg-gradient-to-br hover:from-rose-100 hover:to-rose-200
+        hover:shadow-lg'
       >
         {openNav ? (
           <MenuIcon path='M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z' />

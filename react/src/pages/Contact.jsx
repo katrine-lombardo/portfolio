@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import FormContact from "../components/FormContact";
-import SubmitSuccess from "../components/SubmitSuccess";
-import SubmitError from "../components/SubmitError";
+import ListContacts from "../components/ListContacts";
 
 const Contact = () => {
   useEffect(() => {
@@ -9,8 +8,9 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className='flex flex-col justify-center px-6'>
+    <div className='flex flex-col justify-center px-10'>
       <div className='flex-col'>
+        <ListContacts />
         <FormContact />
       </div>
     </div>

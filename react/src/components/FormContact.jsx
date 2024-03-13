@@ -58,7 +58,7 @@ const FormContact = () => {
 
   return (
     <>
-      <div className='md:w-3/5 justify-center mx-auto p-10 shadow-md rounded-xl'>
+      <div className='flex flex-col justify-items-center mx-auto md:w-4/5 py-10 '>
         {submitSuccess && (
           <div>
             <SubmitSuccess />
@@ -69,7 +69,7 @@ const FormContact = () => {
             <SubmitError />
           </div>
         )}
-        <h1>Let's chat</h1>
+        <h1 className='text-center'>Send me a message</h1>
         <form onSubmit={handleSubmit}>
           <label className='block text-left mb-5'>
             <span className='text-gray-700'>Name</span>
@@ -110,12 +110,21 @@ const FormContact = () => {
               rows='3'
             />
           </label>
-          <button
-            type='submit'
-            className='mt-6 text-white bg-rose-800 hover:bg-rose-600 p-2 shadow-md rounded-xl focus:outline-none focus:ring focus:ring-rose-200'
-          >
-            Share
-          </button>
+          <div className='flex justify-center items-center'>
+            <button
+              type='submit'
+              className='place-items-center shadow-md mt-6 p-3 border rounded-lg
+              text-rose-600
+              border-rose-100
+              bg-gradient-to-br from-rose-50 to-rose-100
+              hover:text-rose-600
+              hover:border-rose-200
+              hover:bg-gradient-to-br hover:from-rose-100 hover:to-rose-200
+              hover:shadow-lg'
+            >
+              Send
+            </button>
+          </div>
         </form>
       </div>
     </>

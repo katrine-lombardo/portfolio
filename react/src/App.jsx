@@ -7,7 +7,7 @@ import Skills from "./pages/Skills";
 import Messages from "./pages/Messages";
 import Nav from "./Nav";
 import Footer from "./Footer";
-import "./styles/App.css";
+import "./styles/index.css";
 
 function App() {
   return (

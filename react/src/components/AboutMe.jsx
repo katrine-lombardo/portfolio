@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const AboutMe = () => {
   return (
     <div className='flex flex-col-reverse md:flex-row gap-6 justify-center items-center'>
@@ -21,13 +23,34 @@ const AboutMe = () => {
             domain hosted on GoDaddy.
           </p>
           <p className='md:text-left my-3'>
-            I'm a recent Hack Reactor coding bootcamp graduate and seasoned
-            workplace leader with 10+ years experience supporting rapidly
-            scaling tech startups, and a passion for problem-solving.
+            I'm a full-stack developer and seasoned workplace leader with 10+
+            years of experience supporting rapidly scaling tech startups, and a
+            passion for problem-solving.
           </p>
           <p className='md:text-left my-3'>
-            Make yourself at home, view my projects and skills, and chat with me
-            about how we can work together to build something cool.
+            I'm currently looking for my next opportunity, so please check out
+            my recent{" "}
+            <Link
+              to='/projects'
+              className='text-rose-500 hover:text-rose-700 visted:text-rose-800'
+            >
+              projects
+            </Link>{" "}
+            and{" "}
+            <Link
+              to='/skills'
+              className='text-rose-500 hover:text-rose-700 visted:text-rose-800'
+            >
+              skills
+            </Link>
+            , and{" "}
+            <Link
+              to='/contact'
+              className='text-rose-500 hover:text-rose-700 visted:text-rose-800'
+            >
+              reach out
+            </Link>{" "}
+            to make a connection!
           </p>
         </div>
       </div>
