@@ -10,7 +10,7 @@ const Footer = () => {
           Icons8
         </Link>{" "}
         ・ Site by <NavLink to='/messages'> Katrine</NavLink> ・ Inspiration by
-        Domino
+        <NavLink to='/badingo'> Domino</NavLink>
       </div>
     </footer>
   );

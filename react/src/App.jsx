@@ -7,6 +7,7 @@ import Skills from "./pages/Skills";
 import Messages from "./pages/Messages";
 import Nav from "./Nav";
 import Footer from "./Footer";
+import Badingo from "./pages/Badingo";
 import "./styles/index.css";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path='/skills' element={<Skills />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/messages' element={<Messages />} />
+        <Route path='/badingo' element={<Badingo />} />
       </Routes>
       <Footer />
     </BrowserRouter>
