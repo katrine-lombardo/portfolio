@@ -1,4 +1,5 @@
 import CardContact from "./CardContact";
+import Resume from "/docs/Public_Katrine_Resume_2024.pdf";
 
 const ListContacts = () => {
   const contacts = [
@@ -18,7 +19,7 @@ const ListContacts = () => {
       method: "Resume",
       text: "Download resume",
       img: "./images/contact_rose_resume.png",
-      url: "",
+      url: "./docs/Public_Katrine_Resume_2024.pdf",
     },
   ];
 
