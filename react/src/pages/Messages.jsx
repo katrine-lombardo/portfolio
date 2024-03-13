@@ -11,13 +11,17 @@ const Messages = () => {
   }, []);
 
   if (!isLoggedIn) {
-    return <FormLogin />;
+    return (
+      <div className='my-9 mx-7'>
+        <FormLogin />
+      </div>
+    );
   }
 
   return (
     <div className='my-9 mx-7'>
       <div className='flex-col'>
-        <h1>Messages</h1>
+        <h1 className='text-center'>Messages</h1>
         <div className='flex flex-wrap rounded-lg border-2 p-6 m-6 overflow-y-auto'>
           <ListComments />
         </div>

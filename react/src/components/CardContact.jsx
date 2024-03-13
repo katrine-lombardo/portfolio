@@ -6,7 +6,7 @@ const CardContact = ({ contact }) => {
 
   return (
     <div
-      className='flex flex-col items-center m-3 px-2 rounded-md border-rose-100
+      className='flex flex-col items-center m-3 px-2 rounded-md border border-rose-100 shadow-md
     bg-gradient-to-br from-rose-50 to-rose-100
     hover:text-rose-600
     hover:border-rose-200

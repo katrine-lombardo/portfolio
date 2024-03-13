@@ -49,7 +49,7 @@ const FormLogin = () => {
   };
 
   return (
-    <div className='md:w-3/5 justify-center mx-auto p-10 shadow-md rounded-xl'>
+    <div className='flex flex-col justify-items-center mx-auto md:w-4/5 py-10'>
       {submitSuccess && (
         <div>
           <SubmitSuccess />
@@ -60,8 +60,8 @@ const FormLogin = () => {
           <SubmitError />
         </div>
       )}
-      <h1>Admin Login</h1>
-      <form onSubmit={handleSubmit}>
+      <h1 className='text-center'>Admin Login</h1>
+      <form onSubmit={handleSubmit} className='flex flex-col justify-center'>
         <label className='block text-left mb-5'>
           <span className='text-gray-700'>Email</span>
           <input
@@ -90,19 +90,37 @@ const FormLogin = () => {
             />
             <button
               type='button'
-              className='block items-center px-3 py-2 border rounded text-rose-300 border-rose-300 bg-rose-100 hover:text-rose-600 hover:border-rose-600 hover:bg-rose-200'
+              className='block items-center w-16 border rounded-lg
+          text-rose-600
+          border-rose-100
+          bg-gradient-to-br from-rose-50 to-rose-100
+          hover:text-rose-600
+          hover:border-rose-200
+          hover:bg-gradient-to-br hover:from-rose-100 hover:to-rose-200
+          hover:shadow-lg'
               onClick={togglePasswordVisibility}
             >
               {passwordVisible ? "Hide" : "Show"}
             </button>
           </div>
         </label>
-        <button
-          type='submit'
-          className='mt-6 text-white bg-rose-800 hover:bg-rose-600 p-2 shadow-md rounded-xl focus:outline-none focus:ring focus:ring-rose-200'
-        >
-          Log in
-        </button>
+        <div className='flex justify-center items-center'>
+          <button
+            type='submit'
+            className='justify-center items-center mt-6 p-2   w-32
+          border rounded-lg
+          shadow-md
+          text-rose-600
+          border-rose-100
+          bg-gradient-to-br from-rose-50 to-rose-100
+          hover:text-rose-600
+          hover:border-rose-200
+          hover:bg-gradient-to-br hover:from-rose-100 hover:to-rose-200
+          hover:shadow-lg'
+          >
+            Log in
+          </button>
+        </div>
       </form>
     </div>
   );

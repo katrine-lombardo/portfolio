@@ -55,11 +55,11 @@ const Nav = () => {
   );
 
   return (
-    <div className='flex items-center justify-between sticky top-0 bg-gradient-to-r from-slate-50 to-slate-100 md:w-full mb-5 py-6 px-6'>
+    <div className='flex items-center justify-between sticky top-0 bg-gradient-to-tl from-slate-50 to-slate-100 md:w-full mb-5 py-6 px-6'>
       <NavLink to='/' end>
         <img
           src='/images/badingo_busted.png'
-          className='min-w-12 max-w-12 rounded-lg hue-rotate-30'
+          className='min-w-12 max-w-12 rounded-lg hue-rotate-15'
           alt='badingo logo'
         />
       </NavLink>

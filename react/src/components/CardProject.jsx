@@ -58,7 +58,17 @@ const CardProject = ({ repo }) => {
           <div className='h-fit items-center rounded-sm bg-gray-50 px-2 py-1 text-xs text-gray-400'>
             {repo.language}
           </div>
-          <button className='overflow-y-hidden px-3 py-2 border rounded text-rose-300 border-rose-300 bg-rose-100 hover:text-rose-600 hover:border-rose-600 hover:bg-rose-200 transition  hover:-translate-y-1 '>
+          <button
+            className='overflow-y-hidden px-3 py-2 shadow-md
+          border rounded-lg
+          text-rose-600
+          border-rose-100
+          bg-gradient-to-br from-rose-50 to-rose-100
+          hover:text-rose-600
+          hover:border-rose-200
+          hover:bg-gradient-to-br hover:from-rose-100 hover:to-rose-200
+          hover:shadow-lg'
+          >
             <Link
               to={repo.html_url}
               className=''

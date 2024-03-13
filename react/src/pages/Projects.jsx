@@ -7,9 +7,9 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className='my-9 mx-7'>
+    <div className='flex flex-col justify-center items-center my-9 mx-7'>
       <h1>My Projects</h1>
-      <div className='flex justify-items-center overflow-y-auto '>
+      <div className='flex flex-col justify-center items-center overflow-y-auto overflow-x-auto'>
         <ListProjects />
       </div>
     </div>

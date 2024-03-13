@@ -9,12 +9,19 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        display: ['"Roboto"'],
+        body: ['"Roboto"'],
+      },
       colors: {
         rose: {
           light: "#ffe4e6",
           DEFAULT: "#fda4af",
           dark: "#4c0519",
         },
+      },
+      justifyContent: {
+        'center': 'center',
       },
     },
   },

@@ -22,43 +22,38 @@ const ListComments = () => {
   }, []);
 
   return (
-    <div className='container'>
-      <div className='flex items-start justify-center'>
-        <ul role='list' className='divide-y divide-gray-100 w-fit'>
-          <li className='text-xs text-gray-400 grid text-left items-start grid-cols-4'>
-            <p>DATE</p>
-            <p>TIME</p>
-            <p>AUTHOR</p>
-            <p>COMMENT</p>
-          </li>
-          {comments.map((comment, index) => (
-            <li className='gap-x-6 py-5'>
-              <div
-                key={index}
-                className='grid text-left items-start grid-cols-4'
-              >
-                <p>
-                  {new Date(comment.submit_time).toLocaleDateString("en-US", {
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                  })}
-                </p>
-                <p>
-                  {new Date(comment.submit_time).toLocaleTimeString("en-US", {
-                    hour12: false,
-                    hour: "2-digit",
-                    minute: "2-digit",
-                  })}
-                </p>
-                <p>{comment.name}</p>
-                <p>{comment.comment}</p>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
+    <table className='table-auto text-left w-full border-separate border-spacing-3'>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Author</th>
+          <th>Comment</th>
+        </tr>
+      </thead>
+      <tbody>
+        {comments.map((comment, index) => (
+          <tr key={index} className='border-b border-gray-200'>
+            <td>
+              {new Date(comment.submit_time).toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
+            </td>
+            <td>
+              {new Date(comment.submit_time).toLocaleTimeString("en-US", {
+                hour12: false,
+                hour: "2-digit",
+                minute: "2-digit",
+              })}
+            </td>
+            <td>{comment.name}</td>
+            <td className='w-fit'>{comment.comment}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
   );
 };
 

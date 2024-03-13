@@ -58,7 +58,7 @@ const FormContact = () => {
 
   return (
     <>
-      <div className='flex flex-col justify-items-center mx-auto md:w-4/5 py-10 '>
+      <div className='flex flex-col justify-items-center mx-auto md:w-4/5 py-10'>
         {submitSuccess && (
           <div>
             <SubmitSuccess />
