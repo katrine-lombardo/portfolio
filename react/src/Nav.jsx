@@ -59,7 +59,10 @@ const Nav = () => {
       <NavLink to='/' end>
         <img
           src='/images/badingo_busted.png'
-          className='min-w-12 max-w-12 rounded-lg hue-rotate-15'
+          className='min-w-12 max-w-12 rounded-lg hue-rotate-15
+          hover:rotate-12
+          hover:scale-110
+          '
           alt='badingo logo'
         />
       </NavLink>
