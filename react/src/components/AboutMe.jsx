@@ -18,9 +18,9 @@ const AboutMe = () => {
         </div>
         <div>
           <p className='md:text-left my-3'>
-            Hello, I'm Katrine! It's nice to meet you. Welcome to badingo.net,
-            my portfolio page built in Vite + React, deployed on Plesk, and
-            domain hosted on GoDaddy.
+            I'm Katrine, it's nice to meet you! Welcome to badingo.net, my
+            portfolio page built in Vite + React, deployed on Plesk, and domain
+            hosted on GoDaddy.
           </p>
           <p className='md:text-left my-3'>
             I'm a full-stack developer and seasoned workplace leader with 10+

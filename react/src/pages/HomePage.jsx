@@ -7,7 +7,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className='flex md:mx-6 md:min-h-[200px] md:mt-20'>
+    <div className='flex md:mx-6 md:min-h-[200px] text-center md:mt-20'>
       <AboutMe />
     </div>
   );

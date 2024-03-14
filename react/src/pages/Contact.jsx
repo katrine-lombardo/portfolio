@@ -9,7 +9,7 @@ const Contact = () => {
 
   return (
     <div className='flex flex-col justify-center px-10'>
-      <div className='flex-col'>
+      <div className='flex-col mb-4'>
         <ListContacts />
         <FormContact />
       </div>

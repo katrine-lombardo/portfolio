@@ -7,7 +7,7 @@ const Badingo = () => {
 
   return (
     <div className='grid grid-cols-1 px-10 justify-center items-center max-h-screen'>
-      <div className='flex flex-col gap-y-4 justify-center items-center px-10'>
+      <div className='flex flex-col gap-y-4 justify-center text-center items-center px-10'>
         <h1>Why Badingo?</h1>
         <img
           src='./images/domino_and_badingo.jpeg'
