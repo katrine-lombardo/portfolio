@@ -19,10 +19,10 @@ const Messages = () => {
   }
 
   return (
-    <div className='my-9 mx-7'>
+    <div className='my-9'>
       <div className='flex-col'>
         <h1 className='text-center'>Messages</h1>
-        <div className='flex flex-wrap rounded-lg border-2 p-6 m-6 overflow-y-auto'>
+        <div className='flex flex-wrap rounded-lg border-2 md:p-6 m-2 md:m-6 overflow-y-auto max-h-[calc(100vh-100px)]'>
           <ListComments />
         </div>
       </div>

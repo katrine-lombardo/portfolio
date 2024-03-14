@@ -42,7 +42,7 @@ const ListSkills = () => {
 
   return (
     <div>
-      <div className='flex overflow-x-auto space-x-7 md:justify-center'>
+      <div className='flex overflow-x-auto space-x-7 justify-center'>
         {skills.map((skill, index) => (
           <CardSkill key={index} skill={skill} />
         ))}

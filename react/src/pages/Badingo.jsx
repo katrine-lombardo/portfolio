@@ -6,7 +6,7 @@ const Badingo = () => {
   }, []);
 
   return (
-    <div className='grid grid-cols-1 px-10 justify-center items-center max-h-screen'>
+    <div className='grid grid-cols-1 px-10 justify-center items-center md:my-9 md:mx-7'>
       <div className='flex flex-col gap-y-4 justify-center text-center items-center px-10'>
         <h1>Why Badingo?</h1>
         <img

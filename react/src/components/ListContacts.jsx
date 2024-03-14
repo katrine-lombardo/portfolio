@@ -24,7 +24,7 @@ const ListContacts = () => {
   ];
 
   return (
-    <div className='grid grid-cols-3 overflow-x-auto w-fit mx-auto justify-center text-center'>
+    <div className='grid grid-cols-3 overflow-x-auto md:w-4/5 mx-auto justify-between text-center'>
       {contacts.map((contact, index) => (
         <CardContact key={index} contact={contact} />
       ))}

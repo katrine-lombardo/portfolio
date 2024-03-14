@@ -37,7 +37,7 @@ const ListComments = () => {
             <td>
               {new Date(comment.submit_time).toLocaleDateString("en-US", {
                 year: "numeric",
-                month: "long",
+                month: "short",
                 day: "numeric",
               })}
             </td>

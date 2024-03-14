@@ -42,7 +42,7 @@ const ListCertifications = () => {
   ];
 
   return (
-    <div className='flex overflow-x-auto space-x-5 pr-4 md:justify-center'>
+    <div className='flex overflow-x-auto space-x-5 pr-4 justify-center'>
       {certifications.map((certification, index) => (
         <CardCertification key={index} certification={certification} />
       ))}

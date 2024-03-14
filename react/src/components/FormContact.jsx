@@ -58,7 +58,7 @@ const FormContact = () => {
 
   return (
     <>
-      <div className='flex flex-col justify-items-center mx-auto md:w-4/5 py-10'>
+      <div className='flex flex-col justify-items-center mx-auto md:w-4/5 py-5 md:py-10'>
         {submitSuccess && (
           <div>
             <SubmitSuccess />
@@ -69,7 +69,7 @@ const FormContact = () => {
             <SubmitError />
           </div>
         )}
-        <h1 className='text-center'>Send me a message</h1>
+        <h1 className='text-center md:my-5'>Send me a message</h1>
         <form onSubmit={handleSubmit}>
           <label className='block text-left mb-5'>
             <span className='text-gray-700'>Name</span>
@@ -113,7 +113,8 @@ const FormContact = () => {
           <div className='flex justify-center items-center'>
             <button
               type='submit'
-              className='place-items-center shadow-md mt-6 p-3 border rounded-lg
+              className='place-items-center shadow-md border rounded-lg
+              my-3 md:mt-6 px-3 py-1 md:p-3
               text-rose-600
               border-rose-100
               bg-gradient-to-br from-rose-50 to-rose-100
