@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import InstagramProfile from "../components/Instagram";
 
 const Badingo = () => {
   useEffect(() => {
@@ -19,6 +20,9 @@ const Badingo = () => {
         <p className='text-slate-400'>
           Stay tuned, more Domino content coming soon...
         </p>
+        <div>
+          <InstagramProfile />
+        </div>
       </div>
     </div>
   );
