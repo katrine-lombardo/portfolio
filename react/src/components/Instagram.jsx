@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const accessToken = import.meta.env.VITE_INSTAGRAM_ACCESS_TOKEN;
 const userId = import.meta.env.VITE_INSTAGRAM_USER_ID;
@@ -65,9 +66,16 @@ const InstagramProfile = () => {
             />
           </div>
           <div className='flex items-center my-2'>
-            <h2 className='text-xl font-bold mx-auto text-slate-600'>
-              @{profileData.username}
-            </h2>
+            <Link
+              to='https://www.instagram.com/domino_and_badingo/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='mx-auto text-slate-500 hover:text-rose-700 visted:text-rose-800'
+            >
+              <h2 className='text-xl font-bold text-center'>
+                @{profileData.username}
+              </h2>
+            </Link>
           </div>
           <div className='grid grid-cols-3 gap-3 mx-auto'>
             {media.map(renderMediaItem)}
