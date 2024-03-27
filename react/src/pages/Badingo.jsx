@@ -17,13 +17,8 @@ const Badingo = () => {
         />
         <p>Badingo is the name of my dog Domino's favourite flamingo toy.</p>
         <p>She's had badingo since she was a baby.</p>
-        <p className='text-slate-400'>
-          Stay tuned, more Domino content coming soon...
-        </p>
-        <div>
-          <InstagramProfile />
-        </div>
       </div>
+      <InstagramProfile />
     </div>
   );
 };
