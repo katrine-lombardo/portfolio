@@ -58,23 +58,27 @@ const InstagramProfile = () => {
     <div className='bg-white p-8 rounded-lg shadow-md max-w-xl w-full mx-auto'>
       {profileData && (
         <div>
-          <div className='flex items-start justify-center'>
+          <div className='flex items-start mb-4'>
             <img
               src='./images/domino_and_badingo.jpeg'
               className='w-24 aspect-square object-cover rounded-full border-4 border-white'
               alt='Domino and Badingo'
             />
-          </div>
-          <div className='flex items-center my-2'>
             <Link
               to='https://www.instagram.com/domino_and_badingo/'
               target='_blank'
               rel='noopener noreferrer'
-              className='mx-auto text-slate-500 hover:text-rose-700 visted:text-rose-800'
+              className='ml-8 text-slate-500'
             >
-              <h2 className='text-xl font-bold text-center'>
+              <h2 className='text-xl font-bold text-center hover:text-rose-700 visted:text-rose-800'>
                 @{profileData.username}
               </h2>
+              <p className='text-left'>description</p>
+              <div className='flex flex-row justify-between w-full'>
+                <p className='basis-1/3 text-left'>posts</p>
+                <p className='basis-1/3 text-left'>followers</p>
+                <p className='basis-1/3 text-left'>following</p>
+              </div>
             </Link>
           </div>
           <div className='grid grid-cols-3 gap-3 mx-auto'>
