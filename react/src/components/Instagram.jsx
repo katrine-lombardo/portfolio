@@ -70,15 +70,13 @@ const InstagramProfile = () => {
               rel='noopener noreferrer'
               className='ml-8 text-slate-500'
             >
-              <h2 className='text-xl font-bold text-center hover:text-rose-700 visted:text-rose-800'>
+              <h2 className='text-xl text-left font-bold hover:text-rose-700 visted:text-rose-800'>
                 @{profileData.username}
               </h2>
-              <p className='text-left'>description</p>
-              <div className='flex flex-row justify-between w-full'>
-                <p className='basis-1/3 text-left'>posts</p>
-                <p className='basis-1/3 text-left'>followers</p>
-                <p className='basis-1/3 text-left'>following</p>
-              </div>
+              <p className='text-left'>
+                The adventures of Domino and her favourite toy, Badingo the
+                flamingo
+              </p>
             </Link>
           </div>
           <div className='grid grid-cols-3 gap-3 mx-auto'>

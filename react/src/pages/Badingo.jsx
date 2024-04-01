@@ -11,10 +11,9 @@ const Badingo = () => {
       <div className='flex flex-col gap-y-4 justify-center text-center items-center px-10'>
         <h1>Why Badingo?</h1>
         <p className='text-slate-600'>
-          Badingo is the name of my dog Domino's favourite flamingo toy.
-        </p>
-        <p className='text-slate-600'>
-          She's had badingo since she was a baby.
+          Badingo is the name of my dog Domino's favourite toy that she got when
+          she was a baby. It's not a common name so it was the first domain that
+          hadn't already been scooped up.
         </p>
         <InstagramProfile />
       </div>
