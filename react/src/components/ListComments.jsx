@@ -26,7 +26,7 @@ const ListComments = () => {
       <thead>
         <tr>
           <th>TESTINGDate</th>
-          <th>Time</th>
+          <th>TESTINGTime</th>
           <th>Author</th>
           <th>Comment</th>
         </tr>
