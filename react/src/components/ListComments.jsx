@@ -32,26 +32,29 @@ const ListComments = () => {
         </tr>
       </thead>
       <tbody>
-        {comments.map((comment, index) => (
-          <tr key={index} className='border-b border-gray-200'>
-            <td>
-              {new Date(comment.submit_time).toLocaleDateString("en-US", {
-                year: "numeric",
-                month: "short",
-                day: "numeric",
-              })}
-            </td>
-            <td>
-              {new Date(comment.submit_time).toLocaleTimeString("en-US", {
-                hour12: false,
-                hour: "2-digit",
-                minute: "2-digit",
-              })}
-            </td>
-            <td>{comment.name}</td>
-            <td className='w-fit'>{comment.comment}</td>
-          </tr>
-        ))}
+        {comments
+          .slice()
+          .reverse()
+          .map((comment, index) => (
+            <tr key={index} className='border-b border-gray-200'>
+              <td>
+                {new Date(comment.submit_time).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "short",
+                  day: "numeric",
+                })}
+              </td>
+              <td>
+                {new Date(comment.submit_time).toLocaleTimeString("en-US", {
+                  hour12: false,
+                  hour: "2-digit",
+                  minute: "2-digit",
+                })}
+              </td>
+              <td>{comment.name}</td>
+              <td className='w-fit'>{comment.comment}</td>
+            </tr>
+          ))}
       </tbody>
     </table>
   );
