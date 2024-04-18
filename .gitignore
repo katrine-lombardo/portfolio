@@ -28,6 +28,8 @@ dist-ssr
 
 # PHP database variables
 api/config.php
+api/testtable.php
+api/products.php
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
