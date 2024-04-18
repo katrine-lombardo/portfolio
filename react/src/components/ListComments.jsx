@@ -25,8 +25,8 @@ const ListComments = () => {
     <table className='table-auto text-left w-full border-separate border-spacing-3'>
       <thead>
         <tr>
-          <th>TESTINGDate</th>
-          <th>TESTINGTime</th>
+          <th>Date</th>
+          <th>Time</th>
           <th>Author</th>
           <th>Comment</th>
         </tr>
